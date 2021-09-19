@@ -1,1 +1,39 @@
 
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+img {
+  width: 100%;
+}
+h3 {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+.intro-text {
+  position: absolute;
+  top: 10%;
+  right: 25%;
+}
+ul {
+  list-style-type: none;
+  padding-left: 50px; 
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color:blue;
+}
+.about-text {
+  width: 70%;
+  display: inline-block;
+  margin-left: 20px
+}
+.links {
+  display: inline-block;
+}
+.about {
+  margin: 50px; 
+}
