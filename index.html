@@ -2,13 +2,14 @@
 <html>
   <head>
     <title>Daniel Cho</title>
-    
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/f3b28bc9cb.js" crossorigin="anonymous"></script>
 
     <style>
       body {
@@ -22,16 +23,58 @@
       h3 {
         font-family: 'Be Vietnam Pro', sans-serif;
       }
+      .intro-text {
+        position: absolute;
+        top: 10%;
+        right: 25%;
+      }
+      ul {
+        list-style-type: none;
+        padding-left: 50px; 
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
+        color:blue;
+      }
+      .about-text {
+        width: 70%;
+        display: inline-block;
+        margin-left: 20px
+      }
+      .links {
+        display: inline-block;
+      }
+      .about {
+        margin: 50px; 
+      }
     </style>
   </head>
+
   <body>
     <script src="script.js"></script>
     <div>
       <img src="icon.png">
-      <div>
+      <div class="intro-text">
         <h3>Hi there, I'm</h3>
         <h1>Daniel Cho</h1>
       </div>
+    </div>
+    <div class="about-me">
+      <div class="links">
+        <ul>
+          <a href="#">
+            <li><i class="fab fa-github"></i> Github</li>
+          </a>
+        </ul>
+      </div>
+      <div class="about-text">
+        <h4>About Me</h4>
+        <p>I don't like anything...</p>
+      </div>
+      
     </div>
   </body>
 </html>
