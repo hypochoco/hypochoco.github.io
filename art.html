@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Daniel Cho</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <link href="art-style.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/ac405172f5.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  </head>
+    
+  <body>
+    <article>
+      <div class="nav">
+        <div class="nav-wrapper">
+          <div class="nav-button">
+            <div class="icon"><a href="index.html"><img id="icon" src="icon.png"></a></div>
+          </div>
+          <div class="nav-button">
+            <div class="nav-icon"><a href="arch.html">Arch</a></div>
+          </div>
+          <div class="nav-button">
+            <div class="nav-icon"><a href="art.html">Art</a></div>
+          </div>
+          <div class="nav-button">
+            <div class="nav-icon"><a href="Resume-Daniel-Cho.pdf">Resume</a></div>
+          </div>
+          <div class="nav-button">
+            <div class="nav-icon"><a href="about-me.html">About Me</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="images">
+        <div> Artwork </div>
+
+        <div class="sub-images">
+          <img class="myImages" id="myImg" src="thinker.png" alt="Thinker" width="250vh">
+          <img class="myImages" id="myImg" src="icon.png" alt="Bear" width="250vh">
+        </div>
+        
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+
+      </div>
+
+      <div class="links">
+        <div class="links-wrapper">
+          <div class="links-button">
+            <div class="links-icon"><a href="https://www.instagram.com/danielchocoart/"><i class="fab fa-instagram"></i></a></div>
+          </div>
+          <div class="links-button">
+            <div class="links-icon"><a href="#"><i class="fab fa-facebook-square"></i></a></div>
+          </div>
+          <div class="links-button">
+            <div class="links-icon"><a href="mailto: daniel_s_cho@brown.edu"><i class="far fa-envelope"></i></a></div>
+          </div>
+        </div>
+      </div>
+
+    </article>
+
+  <script>
+    var modal = document.getElementById('myModal');
+    var images = document.getElementsByClassName('myImages');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    for (var i = 0; i < images.length; i++) {
+      var img = images[i];
+      img.onclick = function(evt) {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+    }
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+  </script>
+
+  </body>
+</html>
