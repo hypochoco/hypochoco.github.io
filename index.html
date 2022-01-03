@@ -1,65 +1,211 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Daniel Cho</title>
+<html lang="en">
 
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="style.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+    <title>Hypochoco Art</title>
+
+    <!-- Fonts and Symbols -->
 
     <script src="https://kit.fontawesome.com/ac405172f5.js" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-  </head>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet">
 
-  <body>
-    <div class="icon">
-      <div class="fade"><a href="index.html"><img id="icon" src="home-images/icon.png"></a></div>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+
+    <div class="preloader">
+        <img class="preloader__icon" src="./img/home-img/logo.png" alt="">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
 
-    <article>
-      <div class="nav">
-        <div class="nav-wrapper">
-          <div class="nav-button">
-            <div class="nav-icon"><div class="fade"><a href="arch/arch.html">Arch</a></div></div>
-          </div>
-          <div class="nav-button">
-            <div class="nav-icon"><div class="fade"><a href="art/art.html">Art</a></div></div>
-          </div>
-          <div class="nav-button">
-            <div class="nav-icon"><div class="fade"><a href="Resume-Daniel-Cho.pdf">Resume</a></div></div>
-          </div>
-          <div class="nav-button">
-            <div class="nav-icon"><div class="fade"><a href="about-me/about-me.html">About Me</a></div></div>
-          </div>
+    <!-- Navigation Bar -->
+
+    <header>
+
+        <div class="logo">
+            <a href="#home">
+                <img src="./img/home-img/logo.png" alt="">
+            </a>
         </div>
-      </div>
 
-      <div class="welcome">
-        <div class="fade">
-          <h1> Welcome </h1>
+        <button class="nav-toggle" aria-label="toggle naviagtion">
+            <span class="hamburger"></span>
+        </button>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#artwork" class="nav__link">Art</a></li>
+                <li class="nav__item"><a href="#architecture" class="nav__link">Arch</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                <li class="nav__item">
+                    <div class="separator">|</div>
+                </li>
+                <li class="nav__item"><a href="#" class="nav__link">Resume</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About Me</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Welcome Page -->
+
+    <section class="welcome-page" id="home">
+        <img src="./img/home-img/cover.png" alt="Welcome Image">
+    </section>
+
+    <!-- Quick About Me -->
+
+    <section class="quick-about-me">
+        <div>Quick About Me</div>
+        <h3 class="section__small-title">some shit...</h3>
+        <img src="./img/home-img/logo.png" alt="profile picture">
+        <p class="section__text">
+            I have no experience whatsoever plz help me
+        </p>
+    </section>
+
+    <!-- Artwork -->
+
+    <section class="art" id="artwork">
+        <h2 class="section__title">Artwork</h2>
+        <p class="section__subtitle">A selection of my recent art</p>
+
+        <div class="portfolio">
+            <!-- Art Portfolio Item 01 -->
+            <a href="#" class="portfolio__item">
+                <img class="portfolio__img" src="./img/art-img/air-building.png" alt="">
+            </a>
+
+            <!-- Art Portfolio Item 02 -->
+            <a href="#" class="portfolio__item">
+                <img class="portfolio__img" src="./img/art-img/beatle.png" alt="">
+            </a>
+
+            <!-- Art Portfolio Item 03 -->
+            <a href="#" class="portfolio__item">
+                <img class="portfolio__img" src="./img/art-img/fish.png" alt="">
+            </a>
+
+            <!-- Art Portfolio Item 04 -->
+            <a href="#" class="portfolio__item">
+                <img class="portfolio__img" src="./img/art-img/house.png" alt="">
+            </a>
         </div>
-      </div>
+    </section>
 
-      <div class="links">
-        <div class="links-wrapper">
-          <div class="links-button">
-            <div class="links-icon"><div class="fade"><a href="https://www.instagram.com/danielchocoart/"><i class="fab fa-instagram"></i></a></div></div>
-          </div>
-          <div class="links-button">
-            <div class="links-icon"><div class="fade"><a href="#"><i class="fab fa-facebook-square"></i></a></div></div>
-          </div>
-          <div class="links-button">
-            <div class="links-icon"><div class="fade"><a href="mailto: daniel_s_cho@brown.edu"><i class="far fa-envelope"></i></a></div></div>
-          </div>
+    <!-- Architecture -->
+
+    <section class="arch" id="architecture">
+        <h2 class="section__title">My Arch</h2>
+        <p class="section__subtitle">(test)</p>
+
+        <div class="portfolio">
+            <!-- Arch Portfolio Item 01 -->
+            <a href="#" class="portfolio__item">
+                <img class="portfolio__img" src="./img/art-img/air-building.png" alt="">
+            </a>
+
+            <!-- Arch Portfolio Item 02 -->
+            <a href="#" class="portfolio__item">
+                <img class="portfolio__img" src="./img/art-img/beatle.png" alt="">
+            </a>
+
+            <!-- Arch Portfolio Item 03 -->
+            <a href="#" class="portfolio__item">
+                <img class="portfolio__img" src="./img/art-img/fish.png" alt="">
+            </a>
+
+            <!-- Arch Portfolio Item 04 -->
+            <a href="#" class="portfolio__item">
+                <img class="portfolio__img" src="./img/art-img/house.png" alt="">
+            </a>
         </div>
-      </div>
+    </section>
 
-    </article>
+    <!-- Contact Me -->
 
-  </body>
+    <section class="contact-me" id="contact">
+        <h2 class="section__title">Contact Me (test)</h2>
+        <p class="section__subtitle">(test)</p>
+
+        <div class="contact-me__body">
+            <p>(test)</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <a href="mailto::daniel_s_cho@brown.edu" class="footer__link">daniel_s_cho@brown.edu</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a href="https://www.instagram.com/hypochocoart/" class="social-list__link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+
+            <li class="social-list__item">
+                <a href="mailto: daniel_s_cho@brown.edu" class="social-list__link">
+                    <i class="far fa-envelope"></i>
+                </a>
+            </li>
+
+            <li class="social-list__item">
+                <a href="https://www.youtube.com/channel/UCEVyujTv9ewNF2AZrnt_UIA" class="social-list__link">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script>
+
+        /* Preloader */
+
+        window.addEventListener('load', () => {
+            const preloader = document.querySelector('.preloader');
+            preloader.classList.add('preloader-finish');
+
+            setTimeout(() => {
+                preloader.remove();
+            }, 550);
+        });
+
+        /* Navigator */
+
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelectorAll('.nav__link');
+
+        navToggle.addEventListener('click', () => {
+            document.body.classList.toggle('nav-open');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                document.body.classList.remove('nav-open');
+            })
+        });
+
+    </script>
+</body>
+
 </html>
