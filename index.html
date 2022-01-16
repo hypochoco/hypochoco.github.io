@@ -76,19 +76,22 @@
     <!-- Quick About Me -->
 
     <section class="quick-about-me">
-        <div class="square">
-            <h2>About Me</h2>
-            <h3 class="section__small-title">some shtuff...</h3>
-            <img src="./img/home-img/logo.png" alt="profile picture">
-            <p class="section__text">
-                Hey my name is Daniel and there is some stuff here,
-                there is some stuff here, there is some stuff here,
-                there is some stuff here, there is some stuff here,
-                there is some stuff here, there is some stuff here,
-            </p>
+        <h2 class="section__title">About Me</h2>
 
-            <p>buttons for resume and more about me</p>
+        <img class="section__logo" src="./img/home-img/logo.png" alt="profile picture">
+
+        <p class="section__text">
+            Hey, my name is Daniel.
+            I'm currently working as an illustractor and character designer.
+            Below you'll find some of my recent work.
+            Thanks for visiting!
+        </p>
+
+        <div class="btn-wrapper">
+            <a href="#" class="btn">More</a>
         </div>
+
+
     </section>
 
     <!-- Artwork -->
@@ -157,13 +160,28 @@
         <h2 class="section__title">Contact Me</h2>
         <p class="section__subtitle">Feel free to reach out!
             For inquiries,
-            you can reach me either through email or phone.
+            you can reach me through the following form
+            or contact me directly through email or phone.
         </p>
 
         <div class="contact-me__body">
             <p>email: daniel_s_cho@brown.edu</p>
             <p>phone: (720) 936 9354</p>
         </div>
+
+        <div class="contact-form">
+            <form action="contact-form-handler.php" method="POST">
+                <input type="text" name="name" placeholder="Name" required><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+
+                <textarea name="message" placeholder="Message" row="4" required></textarea><br>
+
+                <input type="submit" value="SEND MESSAGE">
+            </form>
+        </div>
+
+
+
     </section>
 
     <!-- Footer -->
