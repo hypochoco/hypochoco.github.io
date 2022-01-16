@@ -441,7 +441,9 @@ header:hover {
     text-align: center;
 }
 
-/* Contact Form */
+.contact-me-wrapper {
+    position: absolute;
+}
 
 /* Footer */
 

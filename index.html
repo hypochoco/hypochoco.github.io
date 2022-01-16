@@ -157,31 +157,31 @@
     <!-- Contact Me -->
 
     <section class="contact-me" id="contact">
-        <h2 class="section__title">Contact Me</h2>
-        <p class="section__subtitle">Feel free to reach out!
-            For inquiries,
-            you can reach me through the following form
-            or contact me directly through email or phone.
-        </p>
 
-        <div class="contact-me__body">
-            <p>email: daniel_s_cho@brown.edu</p>
-            <p>phone: (720) 936 9354</p>
+        <div class="contact-me-wrapper">
+            <h2 class="section__title">Contact Me</h2>
+
+            <p class="section__subtitle">Feel free to reach out!
+                For inquiries,
+                you can reach me through the following form
+                or contact me directly through email or phone.
+            </p>
+
+            <div class="contact-me__body">
+                <p>email: daniel_s_cho@brown.edu</p>
+                <p>phone: (720) 936 9354</p>
+            </div>
+
+            <div class="contact-form">
+                <form action="https://formsubmit.co/daniel_s_cho@brown.edu" method="POST">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </div>
 
-        <div class="contact-form">
-            <form action="contact-form-handler.php" method="POST">
-                <input type="text" name="name" placeholder="Name" required><br>
-                <input type="email" name="email" placeholder="Email" required><br>
-
-                <textarea name="message" placeholder="Message" row="4" required></textarea><br>
-
-                <input type="submit" value="SEND MESSAGE">
-            </form>
-        </div>
-
-
-
+        <img class="section__img--contact-me" src="./img/home-img/contact.png" alt="">
     </section>
 
     <!-- Footer -->
