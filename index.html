@@ -41,9 +41,9 @@
     <header>
 
         <div class="logo">
-            <a href="#home">
-                <img src="./img/home-img/icon.png" alt="">
-                <p>Hypochoco Art</p>
+            <a class="logo__link" href="#home">
+                <img class="logo__img" src="./img/home-img/icon.png" alt="">
+                <p class="logo__text">Hypochoco Art</p>
             </a>
         </div>
 
@@ -70,8 +70,8 @@
     <!-- Welcome Page -->
 
     <section class="welcome-page" id="home">
-        <img class="cover0" src="./img/home-img/cover0.png" alt="Welcome Image">
-        <img class="cover1" src="./img/home-img/cover1.png" alt="Welcome Image">
+        <img class="cover-length" src="./img/home-img/cover0.png" alt="Welcome Image">
+        <img class="cover-width" src="./img/home-img/cover1.png" alt="Welcome Image">
     </section>
 
     <!-- Quick About Me -->
@@ -91,7 +91,6 @@
         <div class="btn-wrapper">
             <a href="#" class="btn">More</a>
         </div>
-
 
     </section>
 
@@ -169,36 +168,38 @@
     <section class="contact-me" id="contact">
         <img class="section__img--contact-me" src="./img/home-img/contact.png" alt="">
 
-        <div class="contact-me-wrapper">
-            <h2 class="section__title">Contact Me</h2>
+        <h2 class="section__title">Contact Me</h2>
 
-            <p class="section__subtitle">Feel free to reach out!
-                For inquiries,
-                you can reach me through the following form
-                or contact me directly through the email or phone number
-                listed at the bottome of the page.
-            </p>
+        <p class="section__subtitle">Feel free to reach out!</p>
+
+        <p class="section__text">
+            For inquiries,
+            you can reach me through the following form
+            or contact me directly through the email or phone number
+            listed at the bottom of the page.
+        </p>
 
 
-            <div class="contact-form">
-                <form action="https://formsubmit.co/07127e69335ef8174035a1668c0fa815" method="POST">
-                    <input class="form-control" type="text" name="name" placeholder="Name" required>
-                    <input class="form-control" type="email" name="email" placeholder="Email" required>
-                    <textarea class="form-control message" name="message" cols="30" rows="8" placeholder="Message"
-                        required></textarea>
-                    <button class="form-control btn" type="submit">Send</button>
+        <div class="contact-form">
+            <form action="https://formsubmit.co/07127e69335ef8174035a1668c0fa815" method="POST">
+                <input class="form-control" type="text" name="name" placeholder="Name" required>
+                <input class="form-control" type="email" name="email" placeholder="Email" required>
+                <textarea class="form-control message" name="message" cols="30" rows="5" placeholder="Message"
+                    required></textarea>
+                <button class="btn" type="submit">Send</button>
 
-                    <input type="hidden" name="_next" value="#">
-                    <input type="hidden" name="_captcha" value="false">
-                </form>
-            </div>
+                <input type="hidden" name="_next" value="https://hypochoco.github.io/">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
 
     <footer class="footer">
+
         <a href="mailto::daniel_s_cho@brown.edu" class="footer__link">daniel_s_cho@brown.edu</a>
+        <a href="tel:7209369354" class="footer__link">(720) 936-9354</a>
         <ul class="social-list">
             <li class="social-list__item">
                 <a href="https://www.instagram.com/hypochocoart/" class="social-list__link">
@@ -218,6 +219,7 @@
                 </a>
             </li>
         </ul>
+
     </footer>
 
     <script>
