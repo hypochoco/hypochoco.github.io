@@ -1,8 +1,8 @@
 Tasks:
 
-Loading screen
-5-7 Solid works for each section
-separate resume page?
+Contact Me setup...
+About Me
 
-Artwork:
-new logo
+font sizing
+
+image opener functionality

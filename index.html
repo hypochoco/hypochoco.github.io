@@ -70,7 +70,8 @@
     <!-- Welcome Page -->
 
     <section class="welcome-page" id="home">
-        <img src="./img/home-img/cover.png" alt="Welcome Image">
+        <img class="cover0" src="./img/home-img/cover0.png" alt="Welcome Image">
+        <img class="cover1" src="./img/home-img/cover1.png" alt="Welcome Image">
     </section>
 
     <!-- Quick About Me -->
@@ -102,24 +103,31 @@
 
         <div class="portfolio">
             <!-- Art Portfolio Item 01 -->
-            <a href="#" class="portfolio__item">
-                <img class="portfolio__img" src="./img/art-img/air-building.png" alt="">
-            </a>
+            <div class="portfolio__item">
+                <img class="portfolio__img" src="./img/art-img/air-building.png" alt="test01">
+            </div>
 
             <!-- Art Portfolio Item 02 -->
-            <a href="#" class="portfolio__item">
+            <div class="portfolio__item">
                 <img class="portfolio__img" src="./img/art-img/beatle.png" alt="">
-            </a>
+            </div>
 
             <!-- Art Portfolio Item 03 -->
-            <a href="#" class="portfolio__item">
+            <div class="portfolio__item">
                 <img class="portfolio__img" src="./img/art-img/fish.png" alt="">
-            </a>
+            </div>
 
             <!-- Art Portfolio Item 04 -->
             <a href="#" class="portfolio__item">
                 <img class="portfolio__img" src="./img/art-img/house.png" alt="">
             </a>
+        </div>
+
+        <!-- Modal Image -->
+        <div id="myModal" class="modal">
+            <div id="caption"></div>
+            <img class="modal-content" id="img01">
+            <span class="close">&times;</span>
         </div>
     </section>
 
@@ -154,9 +162,12 @@
         </div>
     </section>
 
+    <div class="spacer"></div>
+
     <!-- Contact Me -->
 
     <section class="contact-me" id="contact">
+        <img class="section__img--contact-me" src="./img/home-img/contact.png" alt="">
 
         <div class="contact-me-wrapper">
             <h2 class="section__title">Contact Me</h2>
@@ -164,24 +175,24 @@
             <p class="section__subtitle">Feel free to reach out!
                 For inquiries,
                 you can reach me through the following form
-                or contact me directly through email or phone.
+                or contact me directly through the email or phone number
+                listed at the bottome of the page.
             </p>
 
-            <div class="contact-me__body">
-                <p>email: daniel_s_cho@brown.edu</p>
-                <p>phone: (720) 936 9354</p>
-            </div>
 
             <div class="contact-form">
                 <form action="https://formsubmit.co/07127e69335ef8174035a1668c0fa815" method="POST">
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <button type="submit">Send</button>
+                    <input class="form-control" type="text" name="name" placeholder="Name" required>
+                    <input class="form-control" type="email" name="email" placeholder="Email" required>
+                    <textarea class="form-control message" name="message" cols="30" rows="8" placeholder="Message"
+                        required></textarea>
+                    <button class="form-control btn" type="submit">Send</button>
+
+                    <input type="hidden" name="_next" value="#">
+                    <input type="hidden" name="_captcha" value="false">
                 </form>
             </div>
         </div>
-
-        <img class="section__img--contact-me" src="./img/home-img/contact.png" alt="">
     </section>
 
     <!-- Footer -->
@@ -202,8 +213,8 @@
             </li>
 
             <li class="social-list__item">
-                <a href="https://www.youtube.com/channel/UCEVyujTv9ewNF2AZrnt_UIA" class="social-list__link">
-                    <i class="fab fa-youtube"></i>
+                <a href="tel:7209369354" class="social-list__link">
+                    <i class="fas fa-phone-square"></i>
                 </a>
             </li>
         </ul>
@@ -236,6 +247,25 @@
                 document.body.classList.remove('nav-open');
             })
         });
+
+        /* Modal Images */
+
+        var modal = document.getElementById('myModal');
+        var images = document.getElementsByClassName('portfolio__img');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        for (var i = 0; i < images.length; i++) {
+            var img = images[i];
+            img.onclick = function (evt) {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
 
     </script>
 </body>
