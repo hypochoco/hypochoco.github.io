@@ -209,19 +209,17 @@ h3 { font-size: var(--fs-h3); }
 }
 
 .footer {
-    font-size: var(--fs-body);
-    color: var(--clr-light);
-    text-align: center;
+    font-size: var(--fs-nav);
 }
 
-.footer a { 
-    color: inherit; 
-    text-decoration: none;
-}
-
-.footer__link {
-    font-size: var(--fs-body);
+.footer-list__header {
+    color: var(--clr-accent);
     font-weight: var(--fw-bold);
+}
+
+.footer-list__link {
+    color: var(--clr-light);
+    text-decoration: none;
 }
 
 /* Preloader */
@@ -585,35 +583,56 @@ header:hover {
 
 .footer {
     background: var(--clr-dark);
-    padding: 2em 0.5em;
+    padding: 2.5em 2em;
+    display: flex;
+    justify-content: space-between;
 }
 
-.social-list {
+.footer-list-wrapper {
+    display: flex;
+}
+
+.footer-list {
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin: 0;
-    padding: 0;
+    padding: 0 2em;
 }
 
-.social-list__item {
+.footer-list__item {
     margin: 0.2em 0.5em;
 }
 
-.social-list__link {
+.footer-list__link {
     padding: 0.5em;
     transition: 
         opacity 0.2s linear;
 }
 
-.social-list__link:hover {
+.footer-list__link:hover {
     opacity: 0.75;
+}
+
+@media (max-width: 800px) {
+    .footer {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer .logo {
+        display: none;
+    }
+
+    .site-links,
+    .page-links {
+        display: none;
+    }
 }
 
 /* Thank You */
 
-.empty {
+.empty--thank-you {
     color: var(--clr-light);
 }
 
@@ -621,4 +640,46 @@ header:hover {
     text-align: center;
     margin-top: 12em;
     margin-bottom: 55vh;
+}
+
+/* About me */
+
+.empty--about-me {
+    color: var(--clr-light);
+    display: none;
+}
+
+.about-me .section__title {
+    margin-top: 1em;
+}
+
+.about-me .section__text {
+    margin-bottom: 2em;
+}
+
+@media (min-width: 800px) {
+    .empty--about-me {
+        background: var(--clr-light);
+        padding-bottom: 2em;
+        display: block;
+    }
+
+    .about-me {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-me__img {
+        border-radius: 1%;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: cover;
+    }
+
+    .about-me .section__text {
+        font-size: 1rem;
+        margin-bottom: 3em;
+    }
 }
