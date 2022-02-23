@@ -121,7 +121,7 @@ img {
 
 .close {
     font-size: var(--fs-h2);
-    color: var(--clr-accent);
+    color: var(--clr-light);
     cursor: pointer;
 }
 
