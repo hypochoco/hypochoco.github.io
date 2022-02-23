@@ -16,7 +16,8 @@
     --clr-darkopacity1: rgba(30, 30, 30, 0.6);
     --clr-darkopacity2: rgba(30, 30, 30, 0.8);
     --clr-darkopacity3: rgba(30, 30, 30, 0.95);
-    --clr-accent: #da4760;
+    /* --clr-accent: #da4760; */
+    --clr-accent: #62c0d1;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -488,7 +489,7 @@ header:hover {
 .art {
     background-color: var(--clr-dark);
     padding-top: 3rem;
-    padding-bottom: 0;
+    padding-bottom: 3rem;
 }
 
 .portfolio {
