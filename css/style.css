@@ -531,7 +531,8 @@ header:hover {
 /* Contact */
 
 .contact-me {
-    margin-top: 3em;
+    margin-top: 0.5em;
+    padding-top: 3em;
     margin-bottom: 4em;
 }
 
