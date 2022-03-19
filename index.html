@@ -11,15 +11,9 @@
 
     <!-- Fonts and Symbols -->
 
-    <script src="https://kit.fontawesome.com/ac405172f5.js" crossorigin="anonymous"></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Montserrat:wght@300&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Open+Sans:wght@300;500&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -71,13 +65,21 @@
     <!-- Welcome Page -->
 
     <section class="welcome-page" id="home">
+
+        <a href="#quick-about-me" class="section__scroll">
+            <div class="section__scroll-text">SCROLL DOWN</div>
+            <img src="./img/home-img/scroll-down.png" alt="scroll down" class="section__scroll-img">
+        </a>
+
         <img class="cover-length" src="./img/home-img/cover0.png" alt="Welcome Image">
         <img class="cover-width" src="./img/home-img/cover1.png" alt="Welcome Image">
+
+
     </section>
 
     <!-- Quick About Me -->
 
-    <section class="quick-about-me">
+    <section class="quick-about-me" id="quick-about-me">
         <h2 class="section__title">About Me</h2>
 
         <img class="section__logo" src="./img/home-img/logo.png" alt="profile picture">
@@ -105,7 +107,7 @@
 
             <!-- Art Portfolio Item 01 -->
             <a href="./pages/chinese-architecture.html" class="portfolio__item">
-                <div class="portfolio__caption">Chinese Architecture</div>
+                <div class="portfolio__caption">In the Clouds</div>
                 <img class="portfolio__img" src="./img/thumbnail-img/building.png" alt="Fantasy Architecture">
             </a>
 
@@ -135,13 +137,13 @@
 
             <!-- Art Portfolio Item 06 -->
             <a href="./pages/axe-concepts.html" class="portfolio__item">
-                <div class="portfolio__caption">Axe Concepts</div>
+                <div class="portfolio__caption">Axe Weapon Concepts</div>
                 <img class="portfolio__img" src="./img/thumbnail-img/weapons.png" alt="Axe Concepts">
             </a>
 
             <!-- Art Portfolio Item 07 -->
             <a href="./pages/house-concept.html" class="portfolio__item">
-                <div class="portfolio__caption">House Concept</div>
+                <div class="portfolio__caption">Building Concept</div>
                 <img class="portfolio__img" src="./img/thumbnail-img/house.png" alt="House Concept">
             </a>
 
@@ -317,25 +319,25 @@
     <script>
 
         /* Preloader */
-
+    
         window.addEventListener('load', () => {
             const preloader = document.querySelector('.preloader');
             preloader.classList.add('preloader-finish');
-
+    
             setTimeout(() => {
                 preloader.remove();
             }, 550);
         });
-
+    
         /* Navigator */
-
+    
         const navToggle = document.querySelector('.nav-toggle');
         const navLinks = document.querySelectorAll('.nav__link');
-
+    
         navToggle.addEventListener('click', () => {
             document.body.classList.toggle('nav-open');
         });
-
+    
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 document.body.classList.remove('nav-open');
@@ -343,6 +345,7 @@
         });
 
     </script>
+    
 </body>
 
 </html>

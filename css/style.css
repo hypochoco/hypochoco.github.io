@@ -5,19 +5,18 @@
 }
 
 :root {
-    --ff-primary: 'Be Vietnam Pro', sans-serif;
+    --ff-primary: 'Open Sans', sans-serif;
     --ff-secondary: 'Montserrat', sans-serif;
 
     --fw-reg: 300;
-    --fw-bold: 900;
+    --fw-bold: 500;
 
     --clr-light: #fff;
-    --clr-dark: #303030;
+    --clr-dark: #202020;
     --clr-darkopacity1: rgba(30, 30, 30, 0.6);
     --clr-darkopacity2: rgba(30, 30, 30, 0.8);
     --clr-darkopacity3: rgba(30, 30, 30, 0.95);
-    /* --clr-accent: #da4760; */
-    --clr-accent: #62c0d1;
+    --clr-accent: #e03b49;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -30,9 +29,9 @@
 @media (min-width: 1000px) {
     :root {
         --fs-h1: 3.5rem;
-        --fs-h2: 2.75rem;
-        --fs-h3: 1.75rem;
-        --fs-body: 1.5rem;
+        --fs-h2: 2.50rem;
+        --fs-h3: 1.50rem;
+        --fs-body: 1.25rem;
         --fs-button: 1rem
     }
 }
@@ -67,6 +66,35 @@ img {
 
 /* Buttons */
 
+.section__scroll {
+    padding: 1.5rem;
+    padding-bottom: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    text-decoration: none;
+
+    transition: opacity linear 100ms;
+}
+
+.section__scroll-text {
+    /* font-size: var(--fs-button); */
+    font-size: 0.6em;
+    color: var(--clr-light);
+}
+
+.section__scroll-img {
+    width: 2em;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section__scroll:hover{
+    opacity: 0.65;
+}
+
 .btn {
     display: inline-block;
     padding: 0.5em 1.5em;
@@ -79,6 +107,7 @@ img {
     font-size: var(--fs-button);
     font-weight: var(--fw-bold);
     border: none;
+    border-radius: 2.5%;
     transition: background 200ms ease-in-out;
 }
 
@@ -157,6 +186,7 @@ h3 { font-size: var(--fs-h3); }
 .section__text,
 .contact-form {
     font-size: var(--fs-body);
+    font-weight: var(--fw-reg);
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -186,16 +216,8 @@ h3 { font-size: var(--fs-h3); }
     text-align: center;
 }
 
-@media (min-width: 800px) {
-    .quick-about-me .section__text {
-        max-width: 40%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .quick-about-me .section__text {
-        max-width: 35%;
-    }
+.quick-about-me .section__text {
+    font-weight: var(--fw-reg);
 }
 
 .art {
@@ -225,11 +247,12 @@ h3 { font-size: var(--fs-h3); }
 }
 
 .footer-list__header {
-    color: var(--clr-accent);
+    color: var(--clr-light);
     font-weight: var(--fw-bold);
 }
 
 .footer-list__link {
+    font-weight: var(--fw-reg);
     color: var(--clr-light);
     text-decoration: none;
 }
@@ -359,11 +382,11 @@ header:hover {
 .nav__link,
 .nav__item {
     padding: 5px;
-    transition: color 0.2s linear;
+    transition: opacity 0.2s linear;
 }
 
 .nav__link:hover {
-    color: var(--clr-accent);
+    opacity: 0.65;
 }
 
 @media (max-width: 800px) {
@@ -463,7 +486,8 @@ header:hover {
 }
 
 @media (min-width: 1250px) {
-    .welcome-page img {
+    .cover-length,
+    .cover-width {
         min-height: 100vh;
         object-fit: cover;
     }
@@ -479,7 +503,8 @@ header:hover {
 }
 
 @media (max-width: 750px) {
-    .welcome-page img {
+    .cover-length,
+    .cover-width {
         min-height: 100vh;
         object-fit: cover;
     }
@@ -488,18 +513,30 @@ header:hover {
 /* Quick About Me */
 
 .quick-about-me {
-    margin-top: 8rem;
-    margin-bottom: 5rem;
+    position: relative;
+
+    margin: 4em 0;
+
+    padding: 1.5em 0;
 }
 
 .quick-about-me .section__logo {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
     max-width: 200px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .quick-about-me .section__text {
-    margin-bottom: 1.5em;
+    padding-bottom: 2rem;
+}
+
+@media (min-width: 800px) {
+    .quick-about-me {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 45%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
 }
 
 /* Artwork */
@@ -683,14 +720,8 @@ header:hover {
 
 /* Artwork Pages */
 
-.empty--artwork-page {
-    color: var(--clr-light);
-}
-
-.artwork-page {
-    background: var(--clr-light);
-    margin-top: 4em;
-    margin: 1em;
+.empty {
+    height: 5em;
 }
 
 .artwork-page .section__title{
@@ -709,7 +740,7 @@ header:hover {
 
 @media (min-width:800px) {
     .artwork-page {
-        width: 50%;
+        max-width: 80%;
         margin-top: 2em;
         margin-left: auto;
         margin-right: auto;
@@ -718,6 +749,10 @@ header:hover {
         padding-bottom: 0.5em;
         box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     }
+}
+
+.page-fit {
+    height: 30vh;
 }
 
 /* About me */

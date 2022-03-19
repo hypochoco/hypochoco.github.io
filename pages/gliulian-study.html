@@ -11,14 +11,9 @@
 
     <!-- Fonts and Symbols -->
 
-    <script src="https://kit.fontawesome.com/ac405172f5.js" crossorigin="anonymous"></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Montserrat:wght@300&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Open+Sans:wght@300;500&display=swap" rel="stylesheet"> 
 
 </head>
 
@@ -60,9 +55,9 @@
                 <li class="nav__item">
                     <div class="separator">|</div>
                 </li>
-                <li class="nav__item"><a href="./Resume.pdf" class="nav__link" target="_blank"
+                <li class="nav__item"><a href="./../Resume.pdf" class="nav__link" target="_blank"
                         rel="noopener noreferrer">Resume</a></li>
-                <li class="nav__item"><a href="about-me.html" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="./../about-me.html" class="nav__link">About Me</a></li>
             </ul>
         </nav>
 
@@ -70,20 +65,24 @@
 
     <!-- Artwork -->
 
-    <div class="empty--artwork-page">empty</div>
+    <div class="empty"></div>
 
     <section class="artwork-page">
         <h2 class="section__title">GLiulian Study</h2>
         <hr>
-        <img src="./../img/art-img/study-gliulian.png" alt="Gliulian Study">
+        <img src="./../img/art-img/study-gliulian.png" alt="GLiulian Study">
     </section>
+
+    <!-- Page Fit -->
+
+    <div class="page-fit"></div>
 
     <!-- Footer -->
 
     <footer class="footer">
         <div class="logo">
             <a class="logo__link" href="./../index.html#home">
-                <img class="logo__img" src="./img/home-img/icon.png" alt="">
+                <img class="logo__img" src="./../img/home-img/icon.png" alt="">
                 <p class="logo__title">Hypochoco Art</p>
             </a>
         </div>
@@ -97,21 +96,18 @@
 
                 <li class="footer-list__item">
                     <a href="mailto: daniel_s_cho@brown.edu" class="footer-list__link">
-
                         daniel_s_cho@brown.edu
                     </a>
                 </li>
 
                 <li class="footer-list__item">
                     <a href="tel:7209369354" class="footer-list__link">
-
                         (720) 936-9354
                     </a>
                 </li>
 
                 <li class="footer-list__item">
                     <a href="https://www.instagram.com/hypochocoart/" class="footer-list__link">
-
                         Instagram
                     </a>
                 </li>
@@ -122,9 +118,9 @@
                     Site links
                 </li>
 
-                <li class="footer-list__item"><a href="./Resume.pdf" class="footer-list__link" target="_blank"
+                <li class="footer-list__item"><a href="./../Resume.pdf" class="footer-list__link" target="_blank"
                         rel="noopener noreferrer">Resume</a></li>
-                <li class="footer-list__item"><a href="about-me.html" class="footer-list__link">About Me</a></li>
+                <li class="footer-list__item"><a href="./../about-me.html" class="footer-list__link">About Me</a></li>
             </ul>
 
             <ul class="footer-list page-links">
@@ -144,27 +140,27 @@
     </footer>
 
     <script>
-
+        
         /* Preloader */
-
+    
         window.addEventListener('load', () => {
             const preloader = document.querySelector('.preloader');
             preloader.classList.add('preloader-finish');
-
+    
             setTimeout(() => {
                 preloader.remove();
             }, 550);
         });
-
+    
         /* Navigator */
-
+    
         const navToggle = document.querySelector('.nav-toggle');
         const navLinks = document.querySelectorAll('.nav__link');
-
+    
         navToggle.addEventListener('click', () => {
             document.body.classList.toggle('nav-open');
         });
-
+    
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 document.body.classList.remove('nav-open');
@@ -172,6 +168,7 @@
         });
 
     </script>
+
 </body>
 
 </html>
