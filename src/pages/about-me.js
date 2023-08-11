@@ -3,7 +3,7 @@ export default function About_Me() {
     <div className="about-me">
       <div className="about-me--column">
         <h3 className="about-me--title">About Me</h3>
-        <img className="about-me--img" src="./../senior-pic.jpg"/>
+        <img className="about-me--img" src="./../senior-pic.JPG"/>
       </div>
       <div className="about-me--column">
         <h2 className="about-me--subtitle">

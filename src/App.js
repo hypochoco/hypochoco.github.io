@@ -9,7 +9,7 @@ import Grid from './components/grid'
 import Contact from './components/contact';
 import About_Me from './pages/about-me';
 import NoPage from './pages/no-page';
-import Blog_0_0 from './pages/blog_0_0';
+import Blog_0_0 from './pages/blog-0-0';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           <Route index element={<Main />} />
           <Route path='blogs' element={<BlogNav />}>
             <Route path='about_me' element={<About_Me />} />
-            <Route path='blog_0_0' element={<Blog_0_0 />} />
+            <Route path='blog-0-0' element={<Blog_0_0 />} />
           </Route>
           <Route path='*' element={<BlogNav />}>
             <Route path='*' element={<NoPage />} />
@@ -134,9 +134,9 @@ function Main() {
 
   const art = {
     items: [
-      {title: 'Post Apocalyptic', source: './thumbnails-0/thumbnail_0.png', page: '/blogs/blog_0_0'},
-      {title: 'Samurai', source: './thumbnails-0/thumbnail_1.png', page: '/blogs/blog_0_0'},
-      {title: 'Palace Guards', source: './thumbnails-0/thumbnail_2.png', page: '/blogs/blog_0_0'},
+      {title: 'Post Apocalyptic', source: './thumbnails-0/thumbnail_0.png', page: '/blogs/blog-0-0'},
+      {title: 'Samurai', source: './thumbnails-0/thumbnail_1.png', page: '/blogs/blog-0-0'},
+      {title: 'Palace Guards', source: './thumbnails-0/thumbnail_2.png', page: '/blogs/blog-0-0'},
       {title: 'Coming Soon!', source: './icon.png', page: '/'},
       {title: 'Coming Soon!', source: './icon.png', page: '/'},
       {title: 'Coming Soon!', source: './icon.png', page: '/'},
@@ -145,8 +145,8 @@ function Main() {
 
   const architecture = {
     items: [
-      {title: 'Traditional Asian Architecture', source: './thumbnails-1/thumbnail_0.png', page: '/blogs/blog_0_0'},
-      {title: 'Fantasy Architecture', source: './thumbnails-1/thumbnail_1.png', page: '/blogs/blog_0_0'},
+      {title: 'Traditional Asian Architecture', source: './thumbnails-1/thumbnail_0.png', page: '/blogs/blog-0-0'},
+      {title: 'Fantasy Architecture', source: './thumbnails-1/thumbnail_1.png', page: '/blogs/blog-0-0'},
       {title: 'Coming Soon!', source: './icon.png', page: '/'},
       {title: 'Coming Soon!', source: './icon.png', page: '/'},
       {title: 'Coming Soon!', source: './icon.png', page: '/'},
