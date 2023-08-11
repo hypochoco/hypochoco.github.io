@@ -1,8 +1,17 @@
 # todo:
 ## get some better temp images
+## make the typography more mobile friendly
+## fix the navigator for mobile
 
-## make everything mobile friendly...
-# fill in the about me, no page, and blogs
+
+# notes on deploying:
+## run "npm run deploy" after committing changes to deploy the website...
+## double check github domain...
+
+
+
+
+# --- react indo ---
 
 
 # Getting Started with Create React App
