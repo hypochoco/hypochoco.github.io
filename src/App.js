@@ -2,7 +2,7 @@ import './App.css';
 import './index.css'
 
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter, Routes, Route, Outlet, Link, useNavigate } from 'react-router-dom';
+import { HashRouter, BrowserRouter, Routes, Route, Outlet, Link, useNavigate } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 import Grid from './components/grid'
@@ -13,7 +13,7 @@ import Blog_0_0 from './pages/blog-0-0';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path='/' element={<Footer />}>
           <Route index element={<Main />} />
@@ -26,7 +26,7 @@ function App() {
           </Route>
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
@@ -134,8 +134,8 @@ function Main() {
 
   const art = {
     items: [
-      {title: 'Post Apocalyptic', source: './thumbnails-0/thumbnail_0.png', page: '/hypochoco.com/blogs/blog-0-0'},
-      {title: 'Samurai', source: './thumbnails-0/thumbnail_1.png', page: '/hypochoco.github.io/blogs/blog-0-0'},
+      {title: 'Post Apocalyptic', source: './thumbnails-0/thumbnail_0.png', page: '/blogs/blog-0-0'},
+      {title: 'Samurai', source: './thumbnails-0/thumbnail_1.png', page: '/blogs/blog-0-0'},
       {title: 'Palace Guards', source: './thumbnails-0/thumbnail_2.png', page: '/blogs/blog-0-0'},
       {title: 'Coming Soon!', source: './icon.png', page: '/'},
       {title: 'Coming Soon!', source: './icon.png', page: '/'},
