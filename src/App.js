@@ -134,8 +134,8 @@ function Main() {
 
   const art = {
     items: [
-      {title: 'Post Apocalyptic', source: './thumbnails-0/thumbnail_0.png', page: '/blogs/blog-0-0'},
-      {title: 'Samurai', source: './thumbnails-0/thumbnail_1.png', page: '/blogs/blog-0-0'},
+      {title: 'Post Apocalyptic', source: './thumbnails-0/thumbnail_0.png', page: '/hypochoco.com/blogs/blog-0-0'},
+      {title: 'Samurai', source: './thumbnails-0/thumbnail_1.png', page: '/hypochoco.github.io/blogs/blog-0-0'},
       {title: 'Palace Guards', source: './thumbnails-0/thumbnail_2.png', page: '/blogs/blog-0-0'},
       {title: 'Coming Soon!', source: './icon.png', page: '/'},
       {title: 'Coming Soon!', source: './icon.png', page: '/'},
