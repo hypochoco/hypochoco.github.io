@@ -202,11 +202,11 @@ function Main() {
             <span className='hamburger'></span>
           </button> 
           <ul className={'nav__list ' + (select ? 'nav-open' : '')}>
-            <li className='nav__item'><a className='nav-item__link' href='#home'>Home</a></li>
-            <li className='nav__item'><a className='nav-item__link' href='#art'>Art</a></li>
-            <li className='nav__item'><a className='nav-item__link' href='#arch'>Architecture</a></li>
-            <li className='nav__item'><a className='nav-item__link' href='#prog'>Programming</a></li>
-            <li className='nav__item'><a className='nav-item__link' href='#contact'>Contact</a></li>
+            <li className='nav__item'><HashLink className='nav-item__link' href='#home'>Home</HashLink></li>
+            <li className='nav__item'><HashLink className='nav-item__link' href='#art'>Art</HashLink></li>
+            <li className='nav__item'><HashLink className='nav-item__link' href='#arch'>Architecture</HashLink></li>
+            <li className='nav__item'><HashLink className='nav-item__link' href='#prog'>Programming</HashLink></li>
+            <li className='nav__item'><HashLink className='nav-item__link' href='#contact'>Contact</HashLink></li>
             <li className='nav__item'><HashLink className='nav-item__link' to='/blogs/about_me#nav'>About Me</HashLink></li>
           </ul>
         </div>
