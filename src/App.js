@@ -241,12 +241,12 @@ function Main() {
           })}
         </div>
 
-        <a className='scroll-down' href='#quick-about-me'>
+        <HashLink className='scroll-down' to='#quick-about-me'>
           <div>
             SCROLL DOWN
           </div>
           <img className='scroll-down__image' src='./scroll-down.webp'/>
-        </a>
+        </HashLink>
       </section>
 
       {/* --- quick about me --- */}
