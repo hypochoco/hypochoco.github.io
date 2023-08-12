@@ -9,7 +9,15 @@ import Grid from './components/grid'
 import Contact from './components/contact';
 import About_Me from './pages/about-me';
 import NoPage from './pages/no-page';
+
 import Blog_0_0 from './pages/blog-0-0';
+import Blog_0_1 from './pages/blog-0-1';
+import Blog_0_2 from './pages/blog-0-2';
+import Blog_0_3 from './pages/blog-0-3';
+
+import Blog_1_0 from './pages/blog-1-0';
+import Blog_1_1 from './pages/blog-1-1';
+import Blog_1_2 from './pages/blog-1-2';
 
 function App() {
   return (
@@ -19,7 +27,16 @@ function App() {
           <Route index element={<Main />} />
           <Route path='blogs' element={<BlogNav />}>
             <Route path='about_me' element={<About_Me />} />
+
             <Route path='blog-0-0' element={<Blog_0_0 />} />
+            <Route path='blog-0-1' element={<Blog_0_1 />} />
+            <Route path='blog-0-2' element={<Blog_0_2 />} />
+            <Route path='blog-0-3' element={<Blog_0_3 />} />
+
+            <Route path='blog-1-0' element={<Blog_1_0 />} />
+            <Route path='blog-1-1' element={<Blog_1_1 />} />
+            <Route path='blog-1-2' element={<Blog_1_2 />} />
+
           </Route>
           <Route path='*' element={<BlogNav />}>
             <Route path='*' element={<NoPage />} />
@@ -134,10 +151,10 @@ function Main() {
 
   const art = {
     items: [
-      {title: 'Post Apocalyptic', source: './thumbnails-0/thumbnail_0.png', page: '/blogs/blog-0-0'},
-      {title: 'Samurai', source: './thumbnails-0/thumbnail_1.png', page: '/blogs/blog-0-0'},
-      {title: 'Palace Guards', source: './thumbnails-0/thumbnail_2.png', page: '/blogs/blog-0-0'},
-      {title: 'Coming Soon!', source: './icon.png', page: '/'},
+      {title: 'Post Apocalyptic (WIP)', source: './thumbnails-0/thumbnail_0.png', page: '/blogs/blog-0-0'},
+      {title: 'Samurai', source: './thumbnails-0/thumbnail_1.png', page: '/blogs/blog-0-1'},
+      {title: 'Palace Guards (WIP)', source: './thumbnails-0/thumbnail_2.png', page: '/blogs/blog-0-2'},
+      {title: 'Studies!', source: './thumbnails-0/thumbnail_3.png', page: '/blogs/blog-0-3'},
       {title: 'Coming Soon!', source: './icon.png', page: '/'},
       {title: 'Coming Soon!', source: './icon.png', page: '/'},
     ]
@@ -145,9 +162,9 @@ function Main() {
 
   const architecture = {
     items: [
-      {title: 'Traditional Asian Architecture', source: './thumbnails-1/thumbnail_0.png', page: '/blogs/blog-0-0'},
-      {title: 'Fantasy Architecture', source: './thumbnails-1/thumbnail_1.png', page: '/blogs/blog-0-0'},
-      {title: 'Coming Soon!', source: './icon.png', page: '/'},
+      {title: 'Traditional Asian Architecture', source: './thumbnails-1/thumbnail_0.png', page: '/blogs/blog-1-0'},
+      {title: 'Fantasy Architecture (WIP)', source: './thumbnails-1/thumbnail_1.png', page: '/blogs/blog-1-1'},
+      {title: 'Church (WIP)', source: './thumbnails-1/thumbnail_2.png', page: '/blogs/blog-1-2'},
       {title: 'Coming Soon!', source: './icon.png', page: '/'},
       {title: 'Coming Soon!', source: './icon.png', page: '/'},
       {title: 'Coming Soon!', source: './icon.png', page: '/'},

@@ -12,7 +12,10 @@ export default function Blog_0_0() {
         by <HashLink className='blog-author' to='/blogs/about_me'>Daniel Cho</HashLink> | July 31, 2023
       </p>
 
-      <img className='blog-img' src='./../cover-page/arch.png'/>
+      <img className='blog-img' src='./../blog_0_0/post.png'/>
+      <p className='blog-img__caption'>Caption: thing...</p>
+
+      <img className='blog-img' src='./../blog_0_0/BetterBase.png'/>
       <p className='blog-img__caption'>Caption: thing...</p>
 
       <p>
