@@ -310,13 +310,39 @@ function Main() {
             </p>
           </div>
           
+          {/* <div className='portfolio__cover__image-container'>
+            <img className='portfolio__cover__image' src='./cover-page/untitled.png'/> 
+          </div> */}
+
+          <div className='portfolio__cover__image-container'>
+            <video className='portfolio__cover__image' autoPlay muted loop>
+              <source src="./blog_2_0/movie_001.mp4" type="video/mp4"/>
+            </video>
+          </div>
+          
+
+        </div>
+        
+        <Grid props={programming}/>
+      </div>
+
+      {/* <div className='portfolio-container--grey' id='prog'>
+        <div className='portfolio__cover-container'>
+          <div className='portfolio__cover--text-container'>
+            <h2 className='portfolio__cover--title'>Programming</h2>
+            <hr className='portfolio__cover--separator'/>
+            <p className='portfolio__cover--text'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          
           <div className='portfolio__cover__image-container'>
             <img className='portfolio__cover__image' src='./cover-page/untitled.png'/> 
           </div>
         </div>
         
         <Grid props={programming}/>
-      </div>
+      </div> */}
 
       {/* --- contact --- */}
       <Contact />
