@@ -14,6 +14,7 @@
   --clr-light: #fff;
   --clr-light2: #dde8f1;
   --clr-lightopacity1: #ffffffd1;
+  --clr-lightopacity2: #ffffff51;
   --clr-dark: #202020;
   --clr-darkopacity1: rgba(0, 0, 0, 0.6);
   --clr-darkopacity2: rgba(30, 30, 30, 0.8);
@@ -390,6 +391,7 @@ h3 { font-size: var(--fs-h3); }
 /* --- cover page and slideshow --- */
 .cover-page-container {
   margin: 0;
+  overflow: hidden;
 }
 .slideshow {
   overflow: hidden;
@@ -515,19 +517,19 @@ h3 { font-size: var(--fs-h3); }
 
 /* --- portfolios --- */
 .portfolio-container--blue {
-  background-color: #cfd6db;
+  background-color: #dce3e9;
   margin: 0;
-  padding-bottom: 3rem;
+  /* padding-bottom: 3rem; */
 }
 .portfolio-container--red {
-  background-color: #e3e3e3;
+  background-color: #c0c5d2;
   margin: 0;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 .portfolio-container--grey {
-  background-color: #cfcfcf;
+  background-color: #e5e5e5;
   margin: 0;
-  padding-bottom: 3rem;
+  /* padding-bottom: 3rem; */
 }
 .portfolio__cover-container {
   display: flex;
@@ -535,7 +537,7 @@ h3 { font-size: var(--fs-h3); }
   justify-content: space-between;
   align-items: center;
 
-  padding-top: 3em;
+  /* padding-top: 3em; */
   padding-bottom: 1.5em;
 }
 .portfolio__cover-container-reverse {
@@ -544,7 +546,8 @@ h3 { font-size: var(--fs-h3); }
   justify-content: space-between;
   align-items: center;
 
-  padding: 3em 0;
+  padding-top: 2em;
+  padding-bottom: 1.5em;
 }
 @media(min-width: 1200px) {
   .portfolio__cover-container {
@@ -589,6 +592,69 @@ h3 { font-size: var(--fs-h3); }
 .portfolio__cover__image {
   width: 100%;
 }
+
+
+
+
+
+
+
+
+
+.portfolio__cover__video--container {
+  width: 75vw;
+  height: 75vh;
+  overflow: hidden;
+  margin: 0;
+
+  /* position: relative; */
+
+} 
+
+.portfolio__cover__video--play-container {
+  background-color: var(--clr-lightopacity2);
+
+  /* width: 75vw;
+  height: 75vh; */
+
+  position: absolute;
+
+  /* width: 100%;
+  height: 100%; */
+
+  overflow: hidden;
+
+}
+
+
+
+.portfolio__cover_video--play-text {
+  font-size: var(--fs-button-small);
+  padding: 1em;
+  cursor: pointer;
+
+  /* margin-top: 25em; */
+  padding-top: 50vh;
+
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.portfolio__cover__video-container {
+  width: 100%;
+}
+
+.portfolio__cover__video {
+  width: 100%;
+  /* position: absolute; */
+}
+
+
+
+
+
+
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
@@ -830,10 +896,10 @@ h3 { font-size: var(--fs-h3); }
   }
   .about-me--subtitle {
     text-align: left;
-    padding-top: 4em;
+    padding-top: 2.125em;
   }
   .about-me--separator {
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
   .about-me--img {
     width: 55vw;

@@ -19,6 +19,9 @@ import Blog_1_0 from './pages/blog-1-0';
 import Blog_1_1 from './pages/blog-1-1';
 import Blog_1_2 from './pages/blog-1-2';
 
+import Blog_2_0 from './pages/blog-2-0';
+import Blog_2_1 from './pages/blog-2-1';
+
 function App() {
   return (
     <HashRouter>
@@ -36,6 +39,9 @@ function App() {
             <Route path='blog-1-0' element={<Blog_1_0 />} />
             <Route path='blog-1-1' element={<Blog_1_1 />} />
             <Route path='blog-1-2' element={<Blog_1_2 />} />
+
+            <Route path='blog-2-0' element={<Blog_2_0 />} />
+            <Route path='blog-2-1' element={<Blog_2_1 />} />
 
           </Route>
           <Route path='*' element={<BlogNav />}>
@@ -152,10 +158,10 @@ function Main() {
   const art = {
     items: [
       {title: 'Post Apocalyptic (WIP)', source: './thumbnails-0/thumbnail_0.png', page: '/blogs/blog-0-0'},
-      {title: 'Samurai', source: './thumbnails-0/thumbnail_1.png', page: '/blogs/blog-0-1'},
+      {title: 'Ronin', source: './thumbnails-0/thumbnail_1.png', page: '/blogs/blog-0-1'},
       {title: 'Palace Guards (WIP)', source: './thumbnails-0/thumbnail_2.png', page: '/blogs/blog-0-2'},
-      {title: 'Studies!', source: './thumbnails-0/thumbnail_3.png', page: '/blogs/blog-0-3'},
-      {title: 'Coming Soon!', source: './icon.png', page: '/'},
+      {title: 'Marble Studies', source: './thumbnails-0/thumbnail_4.png', page: '/'},
+      {title: 'Artist Studies', source: './thumbnails-0/thumbnail_3.png', page: '/blogs/blog-0-3'},
       {title: 'Coming Soon!', source: './icon.png', page: '/'},
     ]
   }
@@ -173,8 +179,8 @@ function Main() {
 
   const programming = {
     items: [
-      {title: 'Coming Soon!', source: './icon.png', page: '/'},
-      {title: 'Coming Soon!', source: './icon.png', page: '/'},
+      {title: 'Cooperative Pathfinding', source: './thumbnails-2/thumbnail_0.jpg', page: '/blogs/blog-2-0'},
+      {title: 'Boids', source: './thumbnails-2/thumbnail_1.png', page: '/blogs/blog-2-1'},
       {title: 'Coming Soon!', source: './icon.png', page: '/'},
       {title: 'Coming Soon!', source: './icon.png', page: '/'},
       {title: 'Coming Soon!', source: './icon.png', page: '/'},
@@ -183,6 +189,10 @@ function Main() {
   }
 
   const [select, setSelect] = useState(true)
+
+  const onTestClick = () => {
+    console.log("hit!!");
+  }
 
   return (
     <div>
@@ -255,9 +265,7 @@ function Main() {
           <h2 className='section__title'>About Me</h2>
           <img className='section__logo' src='./icon.png' alt='profile picture' />
           <p className='section__text'>
-              Hey, my name's Daniel.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Thanks for visiting!
+            Hey, thanks for visiting–my name’s Daniel. My work focuses on art, architecture, and computer science. This site contains my recent projects and documents my processes and thoughts. If you at all share a curiosity, feel free to reach out.
           </p>
           <HashLink className='btn' to='/blogs/about_me#nav'>MORE</HashLink>
         </div>
@@ -301,6 +309,10 @@ function Main() {
       </div>
 
       <div className='portfolio-container--grey' id='prog'>
+        
+
+
+
         <div className='portfolio__cover-container'>
           <div className='portfolio__cover--text-container'>
             <h2 className='portfolio__cover--title'>Programming</h2>
@@ -314,14 +326,32 @@ function Main() {
             <img className='portfolio__cover__image' src='./cover-page/untitled.png'/> 
           </div> */}
 
-          <div className='portfolio__cover__image-container'>
-            <video className='portfolio__cover__image' autoPlay muted loop>
+          <div className='portfolio__cover__video-container'>
+
+            
+
+            {/* <div className='portfolio__cover__video-container'>
+
+              <div className='portfolio__cover__video--play-container'>
+                <div className='portfolio__cover_video--play-text' onClick={onTestClick}>PRESS TO PLAY</div>
+              </div>
+
+              <video className='portfolio__cover__video'>
+                <source src="./blog_2_0/movie_001.mp4" type="video/mp4"/>
+              </video>
+
+            </div> */}
+            
+            <video className='portfolio__cover__video' autoPlay muted loop>
               <source src="./blog_2_0/movie_001.mp4" type="video/mp4"/>
             </video>
-          </div>
-          
 
+          </div>
         </div>
+
+
+
+
         
         <Grid props={programming}/>
       </div>
