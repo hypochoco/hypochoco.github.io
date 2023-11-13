@@ -31,8 +31,8 @@ export default function About_Me() {
       <div className="about-me">
 
         <div className="about-me--column-second">
-          <img className="about-me--sub-img" src="./../soccer.PNG"/>
-          <img className="about-me--sub-img" src="./../cripple.PNG"/>
+          <img className="about-me--sub-img" src="./../soccer.png"/>
+          <img className="about-me--sub-img" src="./../cripple.png"/>
         </div>
 
         <div className="about-me--column">
@@ -42,11 +42,6 @@ export default function About_Me() {
         </div>
 
       </div>
-      
-      
-
-      
-
 
     </div>
   )
