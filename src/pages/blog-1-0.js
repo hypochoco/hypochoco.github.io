@@ -5,7 +5,7 @@ export default function Blog_1_0() {
     <div className="blog-container">
 
       <h2 className='blog-title'>
-        Example blog...
+        Traditional Asian Architecture - Rendering
       </h2>
 
       <p>
@@ -13,29 +13,33 @@ export default function Blog_1_0() {
       </p>
 
       <img className='blog-img' src='./../blog_1_0/arch.png'/>
-      <p className='blog-img__caption'>Caption: thing...</p>
+      <p className='blog-img__caption'>Final render.</p>
+
+      <p>
+        In this project, there’s no real architecture problem. This is more of an experimentation with Blender and its rendering ability in a pseudo architectural context. Many architecture programs are poorly documented, generally hard to learn, and sometimes quite limited. So, I’ve been trying to learn Blender to get past these problems. And although it, too, has quite a steep learning curve, it’s well documented and is continually updated. Additionally, it also has a quite capable rendering engine. So, it’s presented itself as a great architectural tool, which I’ve been trying to get better at. Accordingly, the goal of this project is to get a better grasp of modeling and rendering in Blender.
+      </p>
+
+      <h3 className='blog-subtitle'>1. Process (WIP)</h3>
+
+      <p>
+        WIP - process explanation coming soon!
+      </p>
 
       <img className='blog-img' src='./../blog_1_0/progress_0.png'/>
-      <p className='blog-img__caption'>Caption: thing...</p>
+      <p className='blog-img__caption'>Progress 1.</p>
 
       <img className='blog-img' src='./../blog_1_0/progress_2.png'/>
-      <p className='blog-img__caption'>Caption: thing...</p>
+      <p className='blog-img__caption'>Progress 2.</p>
 
       <img className='blog-img' src='./../blog_1_0/progress_5.png'/>
-      <p className='blog-img__caption'>Caption: thing...</p>
+      <p className='blog-img__caption'>Progress 3.</p>
 
       <img className='blog-img' src='./../blog_1_0/progress_6.png'/>
-      <p className='blog-img__caption'>Caption: thing...</p>
+      <p className='blog-img__caption'>Progress 4.</p>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+      <img className='blog-img' src='./../blog_1_0/arch.png'/>
+      <p className='blog-img__caption'>Final render.</p>
 
-      <h3 className='blog-subtitle'>1. Test</h3>
-
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
     </div>
   )
 }

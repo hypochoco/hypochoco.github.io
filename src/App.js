@@ -14,10 +14,13 @@ import Blog_0_0 from './pages/blog-0-0';
 import Blog_0_1 from './pages/blog-0-1';
 import Blog_0_2 from './pages/blog-0-2';
 import Blog_0_3 from './pages/blog-0-3';
+import Blog_0_4 from './pages/blog-0-4';
+import Blog_0_5 from './pages/blog-0-5';
 
 import Blog_1_0 from './pages/blog-1-0';
 import Blog_1_1 from './pages/blog-1-1';
 import Blog_1_2 from './pages/blog-1-2';
+import Blog_1_3 from './pages/blog-1-3';
 
 import Blog_2_0 from './pages/blog-2-0';
 import Blog_2_1 from './pages/blog-2-1';
@@ -35,10 +38,13 @@ function App() {
             <Route path='blog-0-1' element={<Blog_0_1 />} />
             <Route path='blog-0-2' element={<Blog_0_2 />} />
             <Route path='blog-0-3' element={<Blog_0_3 />} />
+            <Route path='blog-0-4' element={<Blog_0_4 />} />
+            <Route path='blog-0-5' element={<Blog_0_5 />} />
 
             <Route path='blog-1-0' element={<Blog_1_0 />} />
             <Route path='blog-1-1' element={<Blog_1_1 />} />
             <Route path='blog-1-2' element={<Blog_1_2 />} />
+            <Route path='blog-1-3' element={<Blog_1_3 />} />
 
             <Route path='blog-2-0' element={<Blog_2_0 />} />
             <Route path='blog-2-1' element={<Blog_2_1 />} />
@@ -159,10 +165,10 @@ function Main() {
     items: [
       {title: 'Post Apocalyptic (WIP)', source: './thumbnails-0/thumbnail_0.png', page: '/blogs/blog-0-0'},
       {title: 'Ronin', source: './thumbnails-0/thumbnail_1.png', page: '/blogs/blog-0-1'},
+      {title: 'Tiger and Snake', source: './thumbnails-0/thumbnail_5.png', page: '/blogs/blog-0-5'},
       {title: 'Palace Guards (WIP)', source: './thumbnails-0/thumbnail_2.png', page: '/blogs/blog-0-2'},
-      {title: 'Marble Studies', source: './thumbnails-0/thumbnail_4.png', page: '/'},
+      {title: 'Marble Studies', source: './thumbnails-0/thumbnail_4.png', page: '/blogs/blog-0-4'},
       {title: 'Artist Studies', source: './thumbnails-0/thumbnail_3.png', page: '/blogs/blog-0-3'},
-      {title: 'Coming Soon!', source: './icon.png', page: '/'},
     ]
   }
 
@@ -171,9 +177,9 @@ function Main() {
       {title: 'Traditional Asian Architecture', source: './thumbnails-1/thumbnail_0.png', page: '/blogs/blog-1-0'},
       {title: 'Fantasy Architecture (WIP)', source: './thumbnails-1/thumbnail_1.png', page: '/blogs/blog-1-1'},
       {title: 'Church (WIP)', source: './thumbnails-1/thumbnail_2.png', page: '/blogs/blog-1-2'},
-      {title: 'Coming Soon!', source: './icon.png', page: '/'},
-      {title: 'Coming Soon!', source: './icon.png', page: '/'},
-      {title: 'Coming Soon!', source: './icon.png', page: '/'},
+      {title: 'Boids (WIP)', source: './thumbnails-1/thumbnail_3.png', page: '/blogs/blog-1-3'},
+      {title: '(Korean House) Coming Soon!', source: './icon.png', page: '/'},
+      {title: '(Performing Arts Center) Coming Soon!', source: './icon.png', page: '/'},
     ]
   }
 
@@ -181,8 +187,8 @@ function Main() {
     items: [
       {title: 'Cooperative Pathfinding', source: './thumbnails-2/thumbnail_0.jpg', page: '/blogs/blog-2-0'},
       {title: 'Boids', source: './thumbnails-2/thumbnail_1.png', page: '/blogs/blog-2-1'},
-      {title: 'Coming Soon!', source: './icon.png', page: '/'},
-      {title: 'Coming Soon!', source: './icon.png', page: '/'},
+      {title: '(Ray Tracer) Coming Soon!', source: './icon.png', page: '/'},
+      {title: '(GAN) Coming Soon!', source: './icon.png', page: '/'},
       {title: 'Coming Soon!', source: './icon.png', page: '/'},
       {title: 'Coming Soon!', source: './icon.png', page: '/'},
     ]
@@ -278,7 +284,7 @@ function Main() {
             <h2 className='portfolio__cover--title'>Artwork</h2>
             <hr className='portfolio__cover--separator'/>
             <p className='portfolio__cover--text'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              I grew up drawing, and it has and continues to be a way to express my thoughts. My notes, todo-lists, and any other paper scribbles are all drawings. Accordingly, each of my projects have all been attempts to bring ideas or feelings into a visually aesthetic form. Although lately my time to make these nicer drawings is more scattered, I’ll always try to find the time to make more. 
             </p>
           </div>
           
@@ -300,7 +306,7 @@ function Main() {
             <h2 className='portfolio__cover--title'>Architecture</h2>
             <hr className='portfolio__cover--separator'/>
             <p className='portfolio__cover--text'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Architecture, to me, is an estranged extension of art that dips its toes into an academic field. Much like math, architecture is presented as a problem, where its constraints come in the forms of site, construction, and style, but is solved through an artistic approach. It’s been thought-provoking, eye-opening, and sometimes useful in other fields. The following projects are either artistic, functional, or a collaboration with another field.  
             </p>
           </div>
         </div>
@@ -318,7 +324,7 @@ function Main() {
             <h2 className='portfolio__cover--title'>Programming</h2>
             <hr className='portfolio__cover--separator'/>
             <p className='portfolio__cover--text'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Programming has been an outlet for curiosity and practicality. It’s been a place where I can transform an idea into an almost living reality. My interests lie in the general realm of visual computing and more specifically movement. I find topics like multi-agent path-finding and bird flocking quite interesting. Lately, I’ve been exploring the possibility of incorporating GAN’s and ray-tracing into my other projects. Although many of the works here are still in progress, I hope to share them soon!
             </p>
           </div>
           

@@ -5,25 +5,23 @@ export default function Blog_0_2() {
     <div className="blog-container">
 
       <h2 className='blog-title'>
-        Example blog...
+        Palace Guards - Concept
       </h2>
 
       <p>
         by <HashLink className='blog-author' to='/blogs/about_me'>Daniel Cho</HashLink> | July 31, 2023
       </p>
 
+      <p>
+        Currently this project is a work in progress. I started his idea sometime in highschool, and I wanted to revisit it. At the moment, though, I haven’t had the time to work on this. 
+      </p>
+
       <img className='blog-img' src='./../blog_0_2/pgsv0.png'/>
-      <p className='blog-img__caption'>Caption: thing...</p>
+      <p className='blog-img__caption'>Current state of the project.</p>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+      <img className='blog-img' src='./../blog_0_2/old-palace-guards.png'/>
+      <p className='blog-img__caption'>Old state.</p>
 
-      <h3 className='blog-subtitle'>1. Test</h3>
-
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
     </div>
   )
 }

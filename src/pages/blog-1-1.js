@@ -5,7 +5,7 @@ export default function Blog_1_1() {
     <div className="blog-container">
 
       <h2 className='blog-title'>
-        Example blog...
+        Fantasy Project (WIP) - Architecture
       </h2>
 
       <p>
@@ -13,16 +13,16 @@ export default function Blog_1_1() {
       </p>
 
       <img className='blog-img' src='./../blog_1_1/untitled.png'/>
-      <p className='blog-img__caption'>Caption: thing...</p>
+      <p className='blog-img__caption'>Test rendering.</p>
 
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        With more realistic sites and constraints, I sometimes wonder what it would be like to design architecture for strange environments. In this project, I present myself with a site of rocky mountains and plan to design a watermill for a town located in this strange site. 
       </p>
 
-      <h3 className='blog-subtitle'>1. Test</h3>
+      <h3 className='blog-subtitle'>1. Process (WIP)</h3>
 
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        WIP - Coming soon!!
       </p>
     </div>
   )
