@@ -516,18 +516,18 @@ h3 { font-size: var(--fs-h3); }
 
 
 /* --- portfolios --- */
-.portfolio-container--blue {
-  background-color: #dce3e9;
+.portfolio-container--top {
+  background-color: rgb(221, 218, 211);
   margin: 0;
   /* padding-bottom: 3rem; */
 }
-.portfolio-container--red {
-  background-color: #c0c5d2;
+.portfolio-container--mid {
+  background-color: #e5e5e5;
   margin: 0;
   padding-bottom: 2rem;
 }
-.portfolio-container--grey {
-  background-color: #e5e5e5;
+.portfolio-container--bot {
+  background-color: rgb(232, 220, 217);
   margin: 0;
   /* padding-bottom: 3rem; */
 }
