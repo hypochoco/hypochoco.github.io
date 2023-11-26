@@ -1,4 +1,5 @@
 import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 export default function Blog_2_0() {
   return (
@@ -9,7 +10,7 @@ export default function Blog_2_0() {
       </h2>
 
       <p>
-        by <HashLink className='blog-author' to='/blogs/about_me'>Daniel Cho</HashLink> | Sept. 15, 2023
+        by <HashLink className='blog-author' to='/blogs/about_me'>Daniel Cho</HashLink> | <Link to="https://github.com/hypochoco/Cooperative-Pathfinding-2" className='blog-author' target="_blank" rel="noopener noreferrer"> Github Repository </Link> | Sept. 15, 2023
       </p>
 
       <video className='blog-img' autoPlay muted loop>
@@ -25,11 +26,15 @@ export default function Blog_2_0() {
         This rather small visual discomfort led to the following exploration into the complex world of multi-agent pathfinding algorithms. 	
       </p>
 
-      <h3 className='blog-subtitle'>1. Explaing the MAPF Problem (WIP)</h3>
+      <h3 className='blog-subtitle'>1. The MAPF Problem (WIP)</h3>
 
       <p>WIP - coming soon!</p>
 
-      <h3 className='blog-subtitle'>2. Implmentation in Unity (WIP)</h3>
+      <h3 className='blog-subtitle'>2.1. Implmentation in Unity (WIP)</h3>
+
+      <p>WIP - coming soon!</p>
+
+      <h3 className='blog-subtitle'>2.2. Time Dependency (WIP)</h3>
 
       <p>WIP - coming soon!</p>
 

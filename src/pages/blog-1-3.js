@@ -13,11 +13,21 @@ export default function Blog_1_3() {
         by <HashLink className='blog-author' to='/blogs/about_me'>Daniel Cho</HashLink> | <Link to="https://github.com/hypochoco/boids" className='blog-author' target="_blank" rel="noopener noreferrer"> Github Repository </Link> | Nov. 12, 2023
       </p>
 
-      <img className='blog-img' src='./../blog_1_3/render-1-1.png'/>
+      <img className='blog-img' src='./../blog_1_3/untitled-1.png'/>
       <p className='blog-img__caption'>Final render 1.</p>
 
-      <img className='blog-img' src='./../blog_1_3/render-2-2.png'/>
+      <img className='blog-img' src='./../blog_1_3/untitled.png'/>
       <p className='blog-img__caption'>Final render 2.</p>
+
+      <img className='blog-img' src='./../blog_1_3/untitled-2.png'/>
+      <p className='blog-img__caption'>Final render 3.</p>
+
+
+      <img className='blog-img' src='./../blog_1_3/render-1-1.png'/>
+      <p className='blog-img__caption'>Bare render 1.</p>
+
+      <img className='blog-img' src='./../blog_1_3/render-2-2.png'/>
+      <p className='blog-img__caption'>Bare render 2.</p>
 
       <video className='blog-img' autoPlay muted loop>
         <source src="./blog_2_1/animation_0006.mp4" type="video/mp4"/>
@@ -101,7 +111,7 @@ export default function Blog_1_3() {
       <p className='blog-img__caption'>Angle 3.</p>
 
 
-      <h3 className='blog-subtitle'>3. Further</h3>
+      {/* <h3 className='blog-subtitle'>3. Further</h3>
 
       <p>
         I definitely like how the renders turned out. They’re strangely organic and interesting to look at, but they kind of look like bones. To fix this, I’d probably turn toward materiality. I’d pick maybe a combination of steel and timber construction to render the structures. Further, maybe it’d be nice to generate a more obvious trimesh geometry and have triangular panels of wood or steel. 
@@ -109,7 +119,7 @@ export default function Blog_1_3() {
 
       <p>
         To actually put an end to the project, I would have to either make or find a site for this and render it in that environment.
-      </p>
+      </p> */}
 
     </div>
   )
