@@ -13,6 +13,13 @@ export default function Blog_1_3() {
         by <HashLink className='blog-author' to='/blogs/about_me'>Daniel Cho</HashLink> | <Link to="https://github.com/hypochoco/boids" className='blog-author' target="_blank" rel="noopener noreferrer"> Github Repository </Link> | Nov. 12, 2023
       </p>
 
+      <img className='blog-img' src='./../blog_1_3/boids-0.png'/>
+      <p className='blog-img__caption'>Reworked Final render 1.</p>
+
+      <img className='blog-img' src='./../blog_1_3/boids-1.png'/>
+      <p className='blog-img__caption'>Reworked Final render 1.</p>
+
+
       <img className='blog-img' src='./../blog_1_3/untitled-1.png'/>
       <p className='blog-img__caption'>Final render 1.</p>
 

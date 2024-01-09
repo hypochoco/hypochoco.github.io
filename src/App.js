@@ -22,6 +22,8 @@ import Blog_1_1 from './pages/blog-1-1';
 import Blog_1_2 from './pages/blog-1-2';
 import Blog_1_3 from './pages/blog-1-3';
 import Blog_1_4 from './pages/blog-1-4';
+import Blog_1_5 from './pages/blog-1-5';
+import Blog_1_6 from './pages/blog-1-6';
 
 import Blog_2_0 from './pages/blog-2-0';
 import Blog_2_1 from './pages/blog-2-1';
@@ -47,6 +49,8 @@ function App() {
             <Route path='blog-1-2' element={<Blog_1_2 />} />
             <Route path='blog-1-3' element={<Blog_1_3 />} />
             <Route path='blog-1-4' element={<Blog_1_4 />} />
+            <Route path='blog-1-5' element={<Blog_1_5 />} />
+            <Route path='blog-1-6' element={<Blog_1_6 />} />
 
             <Route path='blog-2-0' element={<Blog_2_0 />} />
             <Route path='blog-2-1' element={<Blog_2_1 />} />
@@ -176,10 +180,11 @@ function Main() {
 
   const architecture = {
     items: [
-      {title: 'Boids (WIP)', source: './thumbnails-1/thumbnail_3.png', page: '/blogs/blog-1-3'},
-      {title: 'Church (WIP)', source: './thumbnails-1/thumbnail_2.png', page: '/blogs/blog-1-2'},
-      {title: '(Korean House) Coming Soon!', source: './icon.png', page: '/'},
-      {title: '(Performing Arts Center) Coming Soon!', source: './icon.png', page: '/'},
+      {title: 'Boids', source: './thumbnails-1/thumbnail_3.png', page: '/blogs/blog-1-3'},
+      {title: 'Providence Infill', source: './thumbnails-1/thumbnail_5.png', page: '/blogs/blog-1-5'},
+      {title: 'Church', source: './thumbnails-1/thumbnail_2.png', page: '/blogs/blog-1-2'},
+      // {title: '(Korean House) Coming Soon!', source: './icon.png', page: '/'},
+      {title: 'Center for Performing Arts', source: './thumbnails-1/thumbnail_6.png', page: '/blogs/blog-1-6'},
       // {title: 'Fantasy Architecture (WIP)', source: './thumbnails-1/thumbnail_1.png', page: '/blogs/blog-1-1'},
       {title: 'Traditional Asian Architecture Rendering', source: './thumbnails-1/thumbnail_0.png', page: '/blogs/blog-1-0'},
       {title: 'Physical Models', source: './thumbnails-1/thumbnail_4.png', page: '/blogs/blog-1-4'},

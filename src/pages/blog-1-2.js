@@ -12,6 +12,18 @@ export default function Blog_1_2() {
         by <HashLink className='blog-author' to='/blogs/about_me'>Daniel Cho</HashLink> | July 31, 2023
       </p>
 
+
+      <img className='blog-img' src='./../blog_1_2/render.png'/>
+      <p className='blog-img__caption'>Final render.</p>
+
+      <img className='blog-img' src='./../blog_1_2/iso-1.png'/>
+      <p className='blog-img__caption'>Isometric render 1.</p>
+
+      <img className='blog-img' src='./../blog_1_2/iso-2.png'/>
+      <p className='blog-img__caption'>Isometric render 2.</p>
+
+
+
       <img className='blog-img' src='./../blog_1_2/untitled.png'/>
       <p className='blog-img__caption'>Black and white traditional church architecture.</p>
 
