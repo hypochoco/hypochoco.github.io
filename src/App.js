@@ -16,6 +16,8 @@ import Blog_0_2 from './pages/blog-0-2';
 import Blog_0_3 from './pages/blog-0-3';
 import Blog_0_4 from './pages/blog-0-4';
 import Blog_0_5 from './pages/blog-0-5';
+import Blog_0_6 from './pages/blog-0-6';
+import Blog_0_7 from './pages/blog-0-7';
 
 import Blog_1_0 from './pages/blog-1-0';
 import Blog_1_1 from './pages/blog-1-1';
@@ -43,6 +45,8 @@ function App() {
             <Route path='blog-0-3' element={<Blog_0_3 />} />
             <Route path='blog-0-4' element={<Blog_0_4 />} />
             <Route path='blog-0-5' element={<Blog_0_5 />} />
+            <Route path='blog-0-6' element={<Blog_0_6 />} />
+            <Route path='blog-0-7' element={<Blog_0_7 />} />
 
             <Route path='blog-1-0' element={<Blog_1_0 />} />
             <Route path='blog-1-1' element={<Blog_1_1 />} />
@@ -175,6 +179,8 @@ function Main() {
       {title: 'Post Apocalyptic (WIP)', source: './thumbnails-0/thumbnail_0.png', page: '/blogs/blog-0-0'},
       {title: 'Marble Studies', source: './thumbnails-0/thumbnail_4.png', page: '/blogs/blog-0-4'},
       {title: 'Artist Studies', source: './thumbnails-0/thumbnail_3.png', page: '/blogs/blog-0-3'},
+      {title: 'Still Life', source: './thumbnails-0/thumbnail_7.png', page: '/blogs/blog-0-6'},
+      {title: 'Scream', source: './thumbnails-0/thumbnail_8.png', page: '/blogs/blog-0-7'},
     ]
   }
 
