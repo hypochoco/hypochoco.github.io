@@ -180,7 +180,7 @@ function Main() {
       {title: 'Marble Studies', source: './thumbnails-0/thumbnail_4.png', page: '/blogs/blog-0-4'},
       {title: 'Artist Studies', source: './thumbnails-0/thumbnail_3.png', page: '/blogs/blog-0-3'},
       {title: 'Still Life', source: './thumbnails-0/thumbnail_7.png', page: '/blogs/blog-0-6'},
-      {title: 'Scream', source: './thumbnails-0/thumbnail_8.png', page: '/blogs/blog-0-7'},
+      // {title: 'Scream', source: './thumbnails-0/thumbnail_8.png', page: '/blogs/blog-0-7'},
     ]
   }
 
@@ -299,7 +299,10 @@ function Main() {
             <h2 className='portfolio__cover--title'>Architecture</h2>
             <hr className='portfolio__cover--separator'/>
             <p className='portfolio__cover--text'>
-              Architecture, to me, is an estranged extension of art that dips its toes into an academic field. Much like math, architecture is presented as a problem, where its constraints come in the forms of site, construction, and style, but is solved through an artistic approach. It’s been thought-provoking, eye-opening, and sometimes useful in other fields. The following projects are either artistic, functional, or a collaboration with another field.  
+            Lately, I’ve been interested in the applications of computer science in Architecture. The Boids project, for example, is a structure generated from Craig Reynolds’ classic algorithm that simulates flocking behavior in animals. By recording where each boid moves in relation to others, we're able to generate a strangely organic structure. 
+            </p>
+            <p className='portfolio__cover--text'>
+            Many of my architectural projects are centered around a theoretical idea or physical phenomenon, wherein I explore how each theme can be harmoniously incorporated into a space. 
             </p>
           </div>
           
@@ -326,7 +329,10 @@ function Main() {
             <h2 className='portfolio__cover--title'>Programming</h2>
             <hr className='portfolio__cover--separator'/>
             <p className='portfolio__cover--text'>
-              Programming has been an outlet for curiosity and practicality. It’s been a place where I can transform an idea into an almost living reality. My interests lie in the general realm of visual computing and more specifically movement. I find topics like multi-agent path-finding and bird flocking quite interesting. Lately, I’ve been exploring the possibility of incorporating GAN’s and ray-tracing into my other projects. Although many of the works here are still in progress, I hope to share them soon!
+            In the subject of computer science, I’m interested in anything visual–either the project focus is a visual outcome or there’s some visual component to it. To that end, I’ve explored a variety of topics, including path-finding, soft-body simulations, plant wilting, path tracers, and more. 
+            </p>
+            <p className='portfolio__cover--text'>
+            And as technologies continue to develop and the doors of possibility open a little wider, I’m excited to continue these explorations and push their boundaries. 
             </p>
           </div>
 
@@ -340,7 +346,11 @@ function Main() {
             <h2 className='portfolio__cover--title'>Artwork</h2>
             <hr className='portfolio__cover--separator'/>
             <p className='portfolio__cover--text'>
-              I grew up drawing, and it has and continues to be a way to express my thoughts. My notes, todo-lists, and any other paper scribbles are all drawings. Accordingly, each of my projects have all been attempts to bring ideas or feelings into a visually aesthetic form. Although lately my time to make these nicer drawings is more scattered, I’ll always try to find the time to make more. 
+            I grew up drawing, and it has and continues to be my way of expressing thoughts. It’s shaped my perception and I’ll keep on drawing for as long as my hands will let me. 
+            </p>
+            <p className='portfolio__cover--text'>
+            Although all my current work is digital, I’ve recently discovered the joys and frustrations of water color. Unlike digital, it is an extraordinarily unforgiving medium–but there are some positives to such difficulties. 
+
             </p>
           </div>
           
