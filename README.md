@@ -8,3 +8,4 @@ TODO:
 2. Not a big fan of the design anymore.
 3. Finish blogs. 
 4. Mobile styling after another refactor?
+5. Loading screens?
