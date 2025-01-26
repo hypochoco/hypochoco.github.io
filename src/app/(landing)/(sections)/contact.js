@@ -22,7 +22,7 @@ export default function Contact()
       <div className={styles.body}>
         <h2 className={global_styles.section_title}>Contact</h2>
         <hr className={global_styles.section_divider} />
-        <p>{"Thanks for visiting--feel free to reach out via phone or email for any inquiries or further communication."}</p>
+        <p>{"Thanks for visiting--feel free to reach out via phone or email for inquiries or further communication."}</p>
         <div style={{display: "flex", flexDirection: "row", gap: "1em", fontWeight: "300"}}>
           <a className={global_styles.button} href="tel:7209369354">Phone</a>
           <a className={global_styles.button} href="mailto:daniel_s_cho@brown.edu">Email</a>
