@@ -1,0 +1,43 @@
+
+.blog {
+    margin-left: 10em;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;    
+}
+
+@media (max-width: 800px) {
+    .blog {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
+
+.body {
+    width: 45vw;
+}
+
+@media (max-width: 800px) {
+    .body {
+        width: 80vw;
+    }
+}
+
+/* .sidebar {
+    margin-top: 5em;
+}
+
+@media (max-width: 1200px) {
+    .sidebar {
+        display: none;
+    }
+} */
+
+.sidebar {
+    display: none;
+}
+
+.caption {
+    text-align: center;
+    font-size: 0.85rem;
+}

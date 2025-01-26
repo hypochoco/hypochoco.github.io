@@ -1,0 +1,47 @@
+
+.image_1 {
+    position: absolute;
+
+    width: 55em;
+    height: 29em;
+    right: -2em;
+    top: -3em;
+
+    mix-blend-mode:hard-light;
+    transform: rotate(180deg) scaleY(-1);
+    filter: sepia(1) hue-rotate(195deg) opacity(0.15);
+}
+
+.image_2 {
+    position: absolute;
+
+    width: 30em;
+    height: 25em;
+    right: 5em;
+    top: .5em;
+
+    mix-blend-mode: multiply;
+    filter: sepia(0.3) hue-rotate(175deg) brightness(0.9);
+}
+
+.image_3 {
+    position: absolute;
+
+    width: 30em;
+    height: 25em;
+    right: 5em;
+    top: .5em;
+
+    filter: sepia(0.25) hue-rotate(175deg) brightness(0.95) opacity(0.85);
+}
+
+.about_me {
+    padding-bottom: 2em;
+    background: radial-gradient(ellipse 200em 75em at 75em -8em, rgb(152, 172, 192), white, white);
+}
+
+.logo {
+    position: relative;
+    width: 10em;
+    height: 10em;
+}

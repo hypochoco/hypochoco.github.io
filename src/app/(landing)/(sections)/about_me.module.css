@@ -1,0 +1,68 @@
+
+.about_me {
+    position: relative;
+    height: 60vh;
+    min-height: 500px;
+    overflow: hidden;
+
+    background: radial-gradient(ellipse 200em 75em at 75vw -5vw, rgb(152, 172, 192), white, white);
+}
+
+.body {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 5vh;
+
+    margin: 1em 10vw;
+}
+
+@media (min-width: 1200px) {
+    .body {
+        width: 30vw;
+        left: 7.5%;
+    }
+}
+
+.image_0 {
+    position: absolute;
+    
+    width: 55em;
+    height: 29em;
+    right: -2em;
+    top: 1em;
+
+    mix-blend-mode: hard-light;
+    transform: rotate(180deg) scaleY(-1);
+    filter: sepia(1) hue-rotate(195deg) opacity(0.15);
+}
+
+.image_1 {
+    position: absolute;
+
+    width: 30em;
+    height: 25em;
+    right: 5em;
+    top: 3.5em;
+
+    mix-blend-mode: multiply;
+    filter: sepia(0.3) hue-rotate(175deg) brightness(0.9);
+}
+
+.image_2 {
+    position: absolute;
+
+    width: 30em;
+    height: 25em;
+    right: 5em;
+    top: 3.5em;
+
+    filter: sepia(0.25) hue-rotate(175deg) brightness(0.95) opacity(0.85);
+}
+
+@media (max-width: 1200px) {
+    .image_1 { display: none; }
+    .image_2 { display: none; }
+}

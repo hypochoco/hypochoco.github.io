@@ -1,0 +1,14 @@
+
+html {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-weight: 300;
+}
+
+:root {
+    --clr-line: white;
+}

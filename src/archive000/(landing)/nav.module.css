@@ -1,0 +1,47 @@
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1em;
+}
+
+.nav {
+    width: 100vw;
+
+    z-index: 5;
+    position: fixed;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    font-size: 0.85rem;
+}
+
+.title {
+    margin: 1em;
+    cursor: pointer;
+}
+
+.logo {
+    width: 3em;
+
+    background-color: white;
+
+    border: none;
+    border-radius: 10%;
+
+    cursor: pointer;
+}
+
+.entry {
+    margin: 0 1.25em;
+    cursor: pointer;
+}
+
+.entry:hover {
+    color: black;
+}

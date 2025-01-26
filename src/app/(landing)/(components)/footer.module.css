@@ -1,0 +1,51 @@
+
+.footer {
+    background-color: black;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 1em;
+    padding-right: 2em;
+    padding-bottom: 3em;
+    font-size: 0.9rem;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.logo_title {
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+}
+
+.link_container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.link_title {
+    margin-bottom: 0.25em;
+}
+
+.link {
+    display: block;
+    
+    margin: 0.125em 0;
+    padding: 0.125em 0;
+
+    cursor: pointer;
+
+    font-weight: 100;
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,33 @@
+
+.about_me {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.inner_block {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+
+    max-width: 40vw;
+}
+
+@media (max-width: 800px) {
+    .block {
+        flex-direction: column;
+    }
+    .inner_block {
+        max-width: 90vw;
+    }
+}

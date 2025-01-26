@@ -1,0 +1,49 @@
+
+.section_title {
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.75rem;
+    font-size: 2.5rem;
+    margin-bottom: 0.25em;
+}
+
+.section_divider {
+    margin: 0;
+    width: 15em;
+    border: solid 1px;
+    border-bottom: none;
+    color: black;
+
+    margin-bottom: 1em;
+}
+
+.button {
+    display: block;
+
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 0.75rem;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    border: solid rgb(136, 136, 136) 1px;
+    border-radius: 5em;
+    padding: 1em 1.5em;
+    background-color: white;
+
+    mix-blend-mode: multiply;
+
+    transition: all .3s ease;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+.button:active {
+    transition: none;
+    color: black;
+    border-color: black;
+    background-color: rgb(182, 182, 182);
+}
