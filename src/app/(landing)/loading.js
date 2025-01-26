@@ -1,6 +1,6 @@
 import Loading from "../(components)/loading";
 
-export default function AboutMeLoading()
+export default function LandingLoading()
 {
   return (<Loading />)
 }

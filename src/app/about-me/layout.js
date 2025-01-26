@@ -5,6 +5,7 @@ export default function AboutMeLayout({ children })
 {
   return (
     <div>
+      <title>Hypochoco - About Me</title>
       <NavBar />
       {children}
       <Footer />

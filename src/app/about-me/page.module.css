@@ -2,32 +2,61 @@
 .about_me {
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
+    margin-bottom: 2em;
+}
+
+.header {
+    margin: 1.5em 0;
 }
 
 .block {
     display: flex;
     flex-direction: row;
-
     justify-content: center;
     align-items: center;
 }
 
 .inner_block {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 1em;
+    position: relative;
+    gap: 1em;
 
-    max-width: 40vw;
+    height: 55vh;
+}
+
+.small {
+    width: 35vw;
+}
+
+.big {
+    width: 45vw;
+}
+
+.half {
+    position: relative;
+    width: 50%;
+}
+
+.block_text {
+    /* background-color: rgba(245, 235, 221, 0.482); */
+    border-radius: 0.5em;
 }
 
 @media (max-width: 800px) {
     .block {
         flex-direction: column;
     }
-    .inner_block {
-        max-width: 90vw;
+    .reverse {
+        flex-direction: column-reverse;
+    }
+    .small {
+        width: 90vw;
+    }
+    .big {
+        width: 90vw;
     }
 }
