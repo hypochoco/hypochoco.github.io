@@ -44,7 +44,7 @@
 
     left: -10vw;
 
-    mix-blend-mode: multiply;
+    /* mix-blend-mode: multiply; */
     filter: opacity(0.05);
 }
 
