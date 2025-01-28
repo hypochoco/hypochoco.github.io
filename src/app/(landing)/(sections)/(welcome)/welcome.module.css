@@ -19,6 +19,12 @@
     font-weight: 100;
 }
 
+@media (max-width: 800px) {
+    .welcome {
+        font-size: 2rem;
+    }
+}
+
 .scroll_container {
     width: 100%;
     position: absolute;

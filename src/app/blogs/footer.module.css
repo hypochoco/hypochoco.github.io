@@ -33,6 +33,10 @@
     gap: 1em;
 }
 
+@media (max-width: 800px) {
+    .link_container { display: none; }
+}
+
 .link_title {
     margin-bottom: 0.25em;
 }

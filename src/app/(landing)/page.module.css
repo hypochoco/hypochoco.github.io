@@ -14,6 +14,12 @@
     margin-bottom: 1em;
 }
 
+@media (max-width: 800px) {
+    .section_sub_title {
+        font-size: 1.5rem;
+    }
+}
+
 .section_divider {
     margin: 0;
     width: 12em;
@@ -41,6 +47,12 @@
     mix-blend-mode: multiply;
 
     transition: all .3s ease;
+}
+
+@media (max-width: 800px) {
+    .button {
+        font-size: 0.7rem;
+    }
 }
 
 .button:hover {

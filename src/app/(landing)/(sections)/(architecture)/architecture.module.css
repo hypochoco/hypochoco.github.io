@@ -31,6 +31,12 @@
     max-width: 45vw;
 }
 
+@media (max-width: 800px) {
+    .project_date { font-size: 0.8rem; }
+    .project_title { font-size: 1rem; }
+    .project_description { font-size: 0.8rem; }
+}
+
 .short {display: none;}
 
 @media (max-width: 800px) {

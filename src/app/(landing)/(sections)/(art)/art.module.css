@@ -53,3 +53,8 @@
 .project_description {
     margin: 0.5em 0.25em;
 }
+
+@media (max-width: 800px) {
+    .project_text { filter: opacity(0); }
+    .project_description { font-size: 0.75rem; }
+}
