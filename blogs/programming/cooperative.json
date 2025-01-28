@@ -1,0 +1,12 @@
+{
+    "header": {
+        "title": "Coopertive Pathfinding",
+        "author": "Daniel Cho",
+        "date": "Spet. 8, 2021"
+    },
+    "body": [
+        "something something something...",
+        "![final boids rendering](/blogs/architecture/boids.webp)",
+        "!![testing video](/blogs/programming/movie_001.mp4)"
+    ]
+}

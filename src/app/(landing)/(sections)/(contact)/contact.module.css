@@ -1,0 +1,25 @@
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+
+    margin: 7.5vh 10vw;
+}
+
+.body {
+    width: 30vw;
+}
+
+@media (max-width: 800px) {
+    .body { width: 100%; }
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}

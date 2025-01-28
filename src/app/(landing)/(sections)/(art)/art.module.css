@@ -1,0 +1,55 @@
+.art {
+    margin: 0 7.5vw;
+}
+
+.body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.project_image {
+    position: relative;
+    width: 20vw;
+    height: 35vw;
+    border-radius: 0.5em;
+}
+
+.project_image_hover {
+    transition: filter ease 0.25s;
+}
+
+.project_image_hover:hover {
+    filter: opacity(0.1);
+}
+
+.project_text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1em;
+
+    box-sizing: border-box;
+}
+
+.project_date {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.project_title {
+    font-weight: 500;
+    margin: 0.25em 0;
+}
+
+.project_description {
+    margin: 0.5em 0.25em;
+}

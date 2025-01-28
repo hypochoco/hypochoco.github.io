@@ -7,13 +7,19 @@
     margin-bottom: 0.25em;
 }
 
+.section_sub_title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0.5em 0;
+    margin-bottom: 1em;
+}
+
 .section_divider {
     margin: 0;
-    width: 15em;
+    width: 12em;
     border: solid 1px;
     border-bottom: none;
     color: black;
-
     margin-bottom: 1em;
 }
 
@@ -30,6 +36,7 @@
     border-radius: 5em;
     padding: 1em 1.5em;
     background-color: white;
+    width: fit-content;
 
     mix-blend-mode: multiply;
 

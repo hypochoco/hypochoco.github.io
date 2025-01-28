@@ -14,10 +14,17 @@ def process_image(image):
     src = image[image.index("(")+1:image.index(")")]
     return f"<div><Image src='{src}' alt='{alt_text}' width={{0}} height={{0}} sizes='100vw' style={{{{ width: '100%', height: 'auto', marginTop: '1em' }}}} /><p className={{styles.caption}}>{alt_text}</p></div>"
 
+def process_video(video):
+    alt_text = video[video.index("[")+1:video.index("]")]
+    src = video[video.index("(")+1:video.index(")")]
+    return f"<div><video style={{{{marginTop: '1em'}}}} width='100%' height='auto' controls preload='none' autoPlay><source src='{src}' type='video/mp4' /><track srcLang='en' label='English' />Your browser does not support the video.</video><p className={{styles.caption}}>{alt_text}</p></div>"
+
 def process_body(body):
     output = ""
     for item in body:
-        if item[0] == "!":
+        if item[0:2] == "!!":
+            output += process_video(item)
+        elif item[0] == "!":
             output += process_image(item)
         else:
             output += process_text(item)
@@ -46,3 +53,4 @@ def generate_blogs(src):
 
 if __name__ == "__main__":
     generate_blogs("architecture")
+    generate_blogs("programming")

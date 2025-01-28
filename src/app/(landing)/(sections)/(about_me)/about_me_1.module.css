@@ -1,0 +1,102 @@
+
+.about_me {
+    position: relative;
+    overflow: hidden;
+
+    height: 60vh;
+    min-height: 500px;
+
+    margin-top: 2em;
+    margin-bottom: -2em;
+}
+
+@media (max-width: 1000px) {
+    .about_me {
+        height: 45vh;
+        min-height: 400px;
+    }
+}
+
+.body {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 25vw;
+
+    top: 5vh;
+    margin: 1em 7.5vw;
+}
+
+@media (max-width: 1000px) {
+    .body {
+        width: 90vw;
+        align-items: center;
+    }
+}
+
+.section_title {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.section_title_alt {
+    color: gray;
+}
+
+.button {
+    margin-top: 1em;
+}
+
+/* .image_0 {
+    position: absolute;
+    
+    width: 45em;
+    height: 29em;
+    right: -1em;
+    
+    border-radius: 0.5em;
+    background-color: black;
+}
+
+.image_1 {
+    position: absolute;
+
+    width: 55em;
+    height: 25em;
+    right: -7.5em;
+    top: 3.5em;
+
+    transform: scaleX(-1);
+    filter: brightness(1.25);
+} */
+
+.image_0 {
+    position: absolute;
+    
+    width: 60vw;
+    height: 25vw;
+    right: 2em;
+    top: 3em;
+    
+    border-radius: 0.5em;
+    background-color: black;
+}
+
+.image_1 {
+    position: absolute;
+
+    width: 70vw;
+    height: 32vw;
+    top: 1vw;
+    right: 0;
+
+    transform: scaleX(-1);
+    filter: brightness(1.25);
+}
+
+@media (max-width: 1000px) {
+    .image_0 { display: none; }
+    .image_1 { display: none; }
+}

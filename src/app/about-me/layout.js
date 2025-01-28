@@ -1,4 +1,5 @@
-import Footer from "../(landing)/(components)/footer";
+// import Footer from "../(landing)/(components)/footer";
+import Footer from "../blogs/footer";
 import NavBar from "../blogs/nav_bar";
 
 export default function AboutMeLayout({ children })

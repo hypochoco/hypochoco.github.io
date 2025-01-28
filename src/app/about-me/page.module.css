@@ -21,6 +21,11 @@
 
 .header {
     margin: 1.5em 0;
+    font-weight: 300;
+}
+
+.sub_header {
+    font-weight: 300;
 }
 
 .block {
