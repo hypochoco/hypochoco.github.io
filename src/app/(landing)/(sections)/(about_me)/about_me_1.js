@@ -16,7 +16,7 @@ export default function AboutMe1()
       <div className={styles.body}>
         <h2 className={styles.section_title}>Hello, I'm <span className={styles.section_title_alt}>Daniel</span></h2>
         <hr className={global_styles.section_divider} />
-        <p className={styles.text}>{"Thanks for visiting—my work focuses on art, architecture, and computer science. This site contains my recent projects and documents my processes and thoughts. If you share a curiosity, feel free to reach out."}</p>
+        <p className={styles.text}>{"Thanks for visiting. My work focuses on art, architecture, and computer science. This site contains my recent projects and documents my processes and thoughts. If you share a curiosity, feel free to reach out."}</p>
         <div className={styles.button}>
           <a className={global_styles.button} href="about-me">more</a>
         </div>

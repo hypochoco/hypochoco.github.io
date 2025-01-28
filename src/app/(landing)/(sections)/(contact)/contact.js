@@ -9,7 +9,7 @@ export default function Contact()
 
       <div className={styles.body}>
         <h2 className={global_styles.section_sub_title}>Contact</h2>
-        <p>{"Thanks for visiting—feel free to reach out via phone or email for inquiries or further communication."}</p>
+        <p>{"Thanks for visiting. Feel free to reach out via phone or email for inquiries or further communication."}</p>
       </div>
 
       <div className={styles.links}>
