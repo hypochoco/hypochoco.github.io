@@ -7,10 +7,10 @@ def process_header(header):
     return f"<div className={{styles.title}}><h2 className={{styles.title__text}}>{header['title']}</h2><p className={{styles.title__info}}>by {header['author']} | {header['date']}</p></div>"
 
 def process_subtitle(text):
-    return f"<p className={{styles.subtitle}}>{text[1:]}</p>"
+    return f'<p className={{styles.subtitle}}>{{"{text[1:]}"}}</p>'
 
 def process_text(text):
-    return f"<p>{text}</p>"
+    return f'<p>{{"{text}"}}</p>'
 
 def process_image(image):
     alt_text = image[image.index("[")+1:image.index("]")]
