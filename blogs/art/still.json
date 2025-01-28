@@ -1,12 +1,12 @@
 {
     "header": {
-        "title": "Boids",
+        "title": "Still life",
         "author": "Daniel Cho",
-        "date": "May. 27, 2024"
+        "date": "Spet. 8, 2021"
     },
     "body": [
         "something something something...",
         "![final boids rendering](/blogs/architecture/boids.webp)",
-        "#Something cool's"
+        "!![testing video](/blogs/programming/movie_001.mp4)"
     ]
 }

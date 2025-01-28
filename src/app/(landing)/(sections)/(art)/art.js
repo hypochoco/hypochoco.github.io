@@ -29,10 +29,10 @@ export default function Art()
       {/* <hr className={global_styles.section_divider} /> */}
 
       <div className={styles.body}>
-        <Project date={"Feb. 20, 2024"} title={"Still life"} description={"more"} description2={"Imaginary still life."} link={"#art"} image={"/landing/imgs/still.webp"} />
-        <Project date={"Sept. 18, 2023"} title={"Tiger and snake"} description={"more"} description2={"Historically inspired illustration."} link={"#art"} image={"/landing/imgs/tigersnake.webp"} />
-        <Project date={"March 16, 2020"} title={"Post apocalyptic"} description={"more"} description2={"Environment in PS and Blender."} link={"#art"} image={"/landing/imgs/post.webp"} />
-        <Project date={"Dec. 2, 2019"} title={"Artist studies"} description={"more"} description2={"Collection of artist studies."} link={"#art"} image={"/landing/imgs/study.webp"} />
+        <Project date={"Feb. 20, 2024"} title={"Still life"} description={"more"} description2={"Imaginary still life."} link={"/blogs/still"} image={"/landing/imgs/still.webp"} />
+        <Project date={"Sept. 18, 2023"} title={"Tiger and snake"} description={"more"} description2={"Historically inspired illustration."} link={"/blogs/tiger"} image={"/landing/imgs/tigersnake.webp"} />
+        <Project date={"March 16, 2020"} title={"Post apocalyptic"} description={"more"} description2={"Environment in PS and Blender."} link={"/blogs/post"} image={"/landing/imgs/post.webp"} />
+        <Project date={"Dec. 2, 2019"} title={"Artist studies"} description={"more"} description2={"Collection of artist studies."} link={"/blogs/studies"} image={"/landing/imgs/study.webp"} />
       </div>
     </div>
   )

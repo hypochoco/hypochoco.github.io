@@ -6,6 +6,9 @@ import json
 def process_header(header):
     return f"<div className={{styles.title}}><h2 className={{styles.title__text}}>{header['title']}</h2><p className={{styles.title__info}}>by {header['author']} | {header['date']}</p></div>"
 
+def process_subtitle(text):
+    return f"<p className={{styles.subtitle}}>{text[1:]}</p>"
+
 def process_text(text):
     return f"<p>{text}</p>"
 
@@ -26,6 +29,8 @@ def process_body(body):
             output += process_video(item)
         elif item[0] == "!":
             output += process_image(item)
+        elif item[0] == "#":
+            output += process_subtitle(item)
         else:
             output += process_text(item)
     return output
@@ -53,4 +58,5 @@ def generate_blogs(src):
 
 if __name__ == "__main__":
     generate_blogs("architecture")
+    generate_blogs("art")
     generate_blogs("programming")

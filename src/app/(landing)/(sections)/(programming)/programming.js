@@ -34,7 +34,7 @@ export default function Programming()
           </div>
           <div className={styles.text}>
             <div className={styles.date}>May 27, 2024</div>
-            <div className={styles.title}>Boids Generation</div>
+            <div className={styles.title}>Boids generation</div>
             <div className={`${styles.description} ${styles.long}`}>{"By tracing the positional history of a 3D implementation of Craig Reynolds' classic BOID algorithm, we can observe how dynamic patterns evolve over time, forming intricate structures that interact with their foundational elements. By also establishing connections based on proximity, these emergent forms take on an unexpectedly organic quality, arising from a minimal set of structured rules."}</div>
             <div className={`${styles.description} ${styles.short}`}>{"By tracing the positional history of a 3D implementation of Craig Reynolds' classic BOID algorithm..."}</div>
             <div>
@@ -44,10 +44,10 @@ export default function Programming()
         </div>
 
         <div className={styles.sub_body_1}>
-          <Project date={"Oct. 18, 2024"} title={"Stable diffusion NeRF"} description={"Combination of stable diffusion and NeRF to generate novel views with limited images."} link={"#programming"} image={"/landing/imgs/nerf.webp"}/>
-          <Project date={"Dec. 21, 2023"} title={"Soft body simulation"} description={"Finite element methods in C++, OpenGL and tetrahedral internal structures to simulate soft bodies."} link={"#programming"} image={"/landing/imgs/soft.webp"}/>
-          <Project date={"Nov. 10, 2023"} title={"Ray tracer"} description={"Unbiased ray tracer in C++ and OpenGL with various BSDF profiles."} link={"#programming"} image={"/landing/imgs/raytracer.webp"}/>
-          <Project date={"Sept. 8, 2021"} title={"Cooperative pathfinding"} description={"Conflict-oriented windowed hierarchical cooperative A* pathfinding in Unity."} link={"#programming"} image={"/landing/imgs/pathfinding.webp"}/>
+          <Project date={"Oct. 18, 2024"} title={"Stable diffusion NeRF"} description={"Combination of stable diffusion and NeRF to generate novel views with limited images."} link={"/blogs/stable"} image={"/landing/imgs/nerf.webp"}/>
+          <Project date={"Dec. 21, 2023"} title={"Soft body simulation"} description={"Finite element methods in C++, OpenGL and tetrahedral internal structures to simulate soft bodies."} link={"/blogs/soft"} image={"/landing/imgs/soft.webp"}/>
+          <Project date={"Nov. 10, 2023"} title={"Ray tracer"} description={"Unbiased ray tracer in C++ and OpenGL with various BSDF profiles."} link={"/blogs/tracer"} image={"/landing/imgs/raytracer.webp"}/>
+          <Project date={"Sept. 8, 2021"} title={"Cooperative pathfinding"} description={"Conflict-oriented windowed hierarchical cooperative A* pathfinding in Unity."} link={"/blogs/cooperative"} image={"/landing/imgs/pathfinding.webp"}/>
         </div>
 
       </div>
