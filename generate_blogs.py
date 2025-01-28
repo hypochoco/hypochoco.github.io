@@ -2,6 +2,9 @@
 import os
 import json
 
+# NOTE:
+    # Don't use ' in the alt text
+
 
 def process_header(header):
     return f"<div className={{styles.title}}><h2 className={{styles.title__text}}>{header['title']}</h2><p className={{styles.title__info}}>by {header['author']} | {header['date']}</p></div>"
