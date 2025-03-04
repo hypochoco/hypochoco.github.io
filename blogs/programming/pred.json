@@ -1,0 +1,28 @@
+{
+    "header": {
+        "title": "Predator Prey",
+        "author": "Daniel Cho",
+        "date": "August. 21, 2022",
+        "repo": "https://github.com/hypochoco/prey-prey"
+    },
+    "body": [
+        "#Project Statement",
+        "This project originated from the course ENGN0040 at Brown.",
+        "The project statement is as follows:",
+        "<ul><li>Predator: Larger mass, fast but slow maneuverability.</li><li>Prey: Smaller mass, slow but high maneuverability.</li><li>Environment: Includes gravity and random forces are applied at each timestep.</li><li>Fuel Mechanics: Agents use fuel through control input and must refuel by touching the ground.</li><li>Crash Condition: If an agent touches the ground at a velocity greater than 15 m/s, it crashes.</li><li>End conditions: The game ends if the predator catches the they prey, the time limit runs out, or either agent crashes.</li></ul>",
+        "The original objective was to develop algorithms for both the predator and the prey and then pit them against each other in a competition.",
+        "!![Predator prey simple demo](programming/pred_prey_demo.mp4)",
+        "#Strategy Development",
+        "During the competition, predator strategies were relatively fixed. When far from the prey, the predator should move quickly in its general direction. As it closes in, it should slow down to counteract possible evasive maneuvers. In practice, the predator must consider the linear combination of higher-order derivatives of the prey's position (beyond veloctiy and acceleration) to be able to catch the prey. Relying solely on position is susceptible to small deviations like evasive maneuvers. While tracking velocity provides better results, it falls short and is easliy out maneuvered (a similar situation arises for acceleration). Of course, beyond a certain point considering too many derivatives becomes impractical as the predator may never commit to an attack.",
+        "Prey strategies were more varied. Evading too early wastes fuel, allowing the predator to wait for the prey to refuel before attacking. Instead, evasive maneuvers began once the predator enters a specific range. A common tactic was to loop within a certain area where the predator's slower maneuverability prevents a collision. However, this requires continuous evasion as the prey lacks the speed to permanently escape.",
+        "My strategy at the time focused on exploiting the predator's need to refuel. In practice, this meant ascending to a certain altitude and orbiting the predator while gradually descending. The goal was to force the predator to refuel first, which we could then take the opportunity to refuel ourselves while fleeing at the same time.",
+        "A more comprehensive derivation of the approach can be found in the original report in the project repository.",
+        "#Applying Reinforcement Learning",
+        "Beyond the traditional algorithmic approaches, I was curious if reinforcement learning could uncover better strategies beyond those in the literature. Instead of manually designing an algorithm, my goal is to train an RL agent to learn evasive maneuvers while adhering to the given constraints.",
+        "However, RL-based approaches present computational challenges. Training requires millions of training steps just to achieve basic navigation, and even more to develop a coherent strategy. Given my limited computational resources, this is quite the concern. One way to mitigate this is by introducing functions for low-level control rather than allowing RL to manage all actions. By abstracting low-level control, RL can focus on learning strategic decision-making, a technique which has been somewhat studied. However, designing effective abstractions in this scenario is nontrivial, as different approaches to structuring low-level control can significantly impact the learning process.",
+        "This project serves as an exploration into whether RL can effectively learn complex adversarial behaviors under physical constraints, despite computational limitations.",
+        "#Work in Progress",
+        "At this point, I've been training the model, but am getting sub par results, where the prey crashes. In other words, the RL is still struggling to learn the rules of the environment, which suggests more training is needed.",
+        "However, I've hit a bound on computational resources. Running a small scale training takes about a day on the machinary I currently have access to. That said, I've turned toward a multistep training process. In a smaller environment, I'll learn a model that can make simple maneuvers and not crash. From there, I'll compose this model with the original RL to hopefully reduce the amount of training required."
+    ]
+}

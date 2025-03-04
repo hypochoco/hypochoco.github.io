@@ -5,15 +5,30 @@ import json
 # NOTE:
     # Don't use ' in the alt text
 
-
 def process_header(header):
-    return f"<div className={{styles.title}}><h2 className={{styles.title__text}}>{header['title']}</h2><p className={{styles.title__info}}>by {header['author']} | {header['date']}</p></div>"
+    if 'repo' in header:
+        return f"<div className={{styles.title}}><h2 className={{styles.title__text}}>{header['title']}</h2><p className={{styles.title__info}}>by {header['author']} | {header['date']} | <a href={{'{header['repo']}'}}>Project repository</a></p></div>"
+    else:
+        return f"<div className={{styles.title}}><h2 className={{styles.title__text}}>{header['title']}</h2><p className={{styles.title__info}}>by {header['author']} | {header['date']}</p></div>"
 
 def process_subtitle(text):
     return f'<p className={{styles.subtitle}}>{{"{text[1:]}"}}</p>'
 
 def process_text(text):
-    return f'<p>{{"{text}"}}</p>'
+    # process links
+    split_text = text.split("`")
+    processed_div = "<p>"
+    flip = False
+    for item in split_text:
+        if not flip:
+            processed_div += f'{{"{item}"}}'
+            flip = True
+        else:
+            link_split = item.split("|")
+            processed_div += f"<a href={{'{link_split[1]}'}}>{link_split[0]}</a>"
+            flip = False
+    processed_div += '</p>'
+    return processed_div
 
 def process_image(image):
     alt_text = image[image.index("[")+1:image.index("]")]
@@ -23,12 +38,17 @@ def process_image(image):
 def process_video(video):
     alt_text = video[video.index("[")+1:video.index("]")]
     src = video[video.index("(")+1:video.index(")")]
-    return f"<div><video style={{{{marginTop: '1em'}}}} width='100%' height='auto' controls preload='none' autoPlay><source src='{src}' type='video/mp4' /><track srcLang='en' label='English' />Your browser does not support the video.</video><p className={{styles.caption}}>{alt_text}</p></div>"
+    return f"<div><video style={{{{marginTop: '1em'}}}} width='100%' height='auto' controls={{false}} preload='none' autoPlay muted loop><source src='{src}' type='video/mp4' /><track srcLang='en' label='English' />Your browser does not support the video.</video><p className={{styles.caption}}>{alt_text}</p></div>"
+
+def process_list(list):
+    return list
 
 def process_body(body):
     output = ""
     for item in body:
-        if item[0:2] == "!!":
+        if item[0:4] == "<ul>":
+            output += process_list(item)
+        elif item[0:2] == "!!":
             output += process_video(item)
         elif item[0] == "!":
             output += process_image(item)

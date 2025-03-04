@@ -12,5 +12,3 @@ I grew up in a suburb of Colorado drawing and tinkering with electronics, which 
 
 Lately, I’ve been interested in the applications of computer science in Architecture. The Boids project, for example, is a structure generated from Craig Reynolds’ classic algorithm that simulates flocking behavior in animals. By keeping a record of where each boid moves in relation to others, we're able to generate an interesting, organic structure.
 
-
-

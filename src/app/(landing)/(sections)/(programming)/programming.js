@@ -46,7 +46,7 @@ export default function Programming()
         <div className={styles.sub_body_1}>
           <Project date={"Oct. 18, 2024"} title={"Stable diffusion NeRF"} description={"Combination of stable diffusion and NeRF to generate novel views with limited images."} link={"/blogs/stable"} image={"/landing/imgs/nerf.webp"}/>
           <Project date={"Dec. 21, 2023"} title={"Soft body simulation"} description={"Finite element methods in C++, OpenGL and tetrahedral internal structures to simulate soft bodies."} link={"/blogs/soft"} image={"/landing/imgs/soft.webp"}/>
-          <Project date={"Nov. 10, 2023"} title={"Ray tracer"} description={"Unbiased ray tracer in C++ and OpenGL with various BSDF profiles."} link={"/blogs/tracer"} image={"/landing/imgs/raytracer.webp"}/>
+          <Project date={"Nov. 10, 2023"} title={"Path tracer"} description={"Unbiased path tracer in C++ and OpenGL with various BSDF profiles."} link={"/blogs/tracer"} image={"/landing/imgs/raytracer.webp"}/>
           <Project date={"Sept. 8, 2021"} title={"Cooperative pathfinding"} description={"Conflict-oriented windowed hierarchical cooperative A* pathfinding in Unity."} link={"/blogs/cooperative"} image={"/landing/imgs/pathfinding.webp"}/>
         </div>
 

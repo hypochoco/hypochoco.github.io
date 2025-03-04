@@ -2,9 +2,10 @@
     "header": {
         "title": "Stable diffusion and NeRF",
         "author": "Daniel Cho",
-        "date": "Spet. 8, 2021"
+        "date": "Sept. 8, 2021"
     },
     "body": [
-        "Woops! The blogs section is undergoing a rewriting--this will be done soon!"
+        "I'd like to convert everything in this project into blog form with some extra commentary, but for now please refer to the `paper|https://github.com/hypochoco/stable-nerf/blob/main/paper.pdf`.",
+        "Essentially, there's been some interesting advancements in novel view synthesis, specifically in utilizing NeRF's (`Pixel NeRF|https://arxiv.org/abs/2012.02190`) and Stable Diffusion (`Zero123|https://zero123.cs.columbia.edu`). In this project, we aim to utilize the priors from Stable Diffusion within the 3D machinery of Pixel NeRF to enhance novel view synthesis."
     ]
 }
