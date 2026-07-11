@@ -1,6 +1,7 @@
 
 import styles from "./footer.module.css"
 import Logo from "./logo"
+import { siteConfig, emailHref, telHref } from "@/config/site"
 
 export default function Footer()
 {
@@ -8,13 +9,13 @@ export default function Footer()
     <div className={styles.footer}>
       <div className={styles.logo}>
         <Logo size={3} background />
-        <div className={styles.logo_title}>Hypochoco</div>
+        <div className={styles.logo_title}>{siteConfig.siteName}</div>
       </div>
       <div className={styles.link_container}>
         <div>
           <div className={styles.link_title}>Contact</div>
-          <a className={styles.link} href="tel:7209369354">+1 (720) 936-9354</a>
-          <a className={styles.link} href="mailto:daniel_s_cho@brown.edu">daniel_s_cho@brown.edu</a>
+          <a className={styles.link} href={telHref}>{siteConfig.phone.display}</a>
+          <a className={styles.link} href={emailHref}>{siteConfig.email}</a>
         </div>
         <div>
           <div className={styles.link_title}>Page Links</div>

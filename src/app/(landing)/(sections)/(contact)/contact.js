@@ -1,6 +1,7 @@
 import global_styles from "./../../page.module.css"
 import styles from "./contact.module.css"
 import Image from "next/image"
+import { emailHref, telHref } from "@/config/site"
 
 export default function Contact()
 {
@@ -13,8 +14,8 @@ export default function Contact()
       </div>
 
       <div className={styles.links}>
-        <a className={global_styles.button} href="mailto:daniel_s_cho@brown.edu">Email</a>
-        <a className={global_styles.button} href="tel:7209369354">Phone</a>
+        <a className={global_styles.button} href={emailHref}>Email</a>
+        <a className={global_styles.button} href={telHref}>Phone</a>
       </div>
         
     </div>

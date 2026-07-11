@@ -14,21 +14,24 @@ def process_header(header):
 def process_subtitle(text):
     return f'<p className={{styles.subtitle}}>{{"{text[1:]}"}}</p>'
 
-def process_text(text):
-    # process links
+def process_inline(text):
+    # Turn `label|url` backtick-delimited segments into anchor tags,
+    # wrapping plain text in JSX string expressions.
     split_text = text.split("`")
-    processed_div = "<p>"
+    output = ""
     flip = False
     for item in split_text:
         if not flip:
-            processed_div += f'{{"{item}"}}'
+            output += f'{{"{item}"}}'
             flip = True
         else:
             link_split = item.split("|")
-            processed_div += f"<a href={{'{link_split[1]}'}}>{link_split[0]}</a>"
+            output += f"<a href={{'{link_split[1]}'}}>{link_split[0]}</a>"
             flip = False
-    processed_div += '</p>'
-    return processed_div
+    return output
+
+def process_text(text):
+    return f"<p>{process_inline(text)}</p>"
 
 def process_image(image):
     alt_text = image[image.index("[")+1:image.index("]")]
@@ -40,8 +43,12 @@ def process_video(video):
     src = video[video.index("(")+1:video.index(")")]
     return f"<div><video style={{{{marginTop: '1em'}}}} width='100%' height='auto' controls={{false}} preload='none' autoPlay muted loop><source src='{src}' type='video/mp4' /><track srcLang='en' label='English' />Your browser does not support the video.</video><p className={{styles.caption}}>{alt_text}</p></div>"
 
-def process_list(list):
-    return list
+def process_list(text):
+    # A body entry beginning with "<ul>" followed by one item per line.
+    # Each item supports the same `label|url` inline link syntax.
+    items = [line for line in text[4:].split("\n") if line.strip()]
+    list_items = "".join(f"<li>{process_inline(item.strip())}</li>" for item in items)
+    return f"<ul className={{styles.list}}>{list_items}</ul>"
 
 def process_body(body):
     output = ""

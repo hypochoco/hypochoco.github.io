@@ -18,7 +18,7 @@ export default function AboutMe1()
         <hr className={global_styles.section_divider} />
         <p className={styles.text}>{"Thanks for visiting. My work focuses on art, architecture, and computer science. This site contains my recent projects and documents my processes and thoughts. If you share a curiosity, feel free to reach out."}</p>
         <div className={styles.button}>
-          <a className={global_styles.button} href="about-me">more</a>
+          <a className={global_styles.button} href="/about-me">more</a>
         </div>
       </div>
 

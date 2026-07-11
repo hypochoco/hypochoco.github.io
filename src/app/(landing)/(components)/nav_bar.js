@@ -1,6 +1,7 @@
 
 import styles from "./nav_bar.module.css"
 import Logo from "./logo"
+import { siteConfig } from "@/config/site"
 
 export default function NavBar()
 {
@@ -9,7 +10,7 @@ export default function NavBar()
 
       <div className={styles.logo}>
         <Logo size={3} background />
-        <div className={styles.logo_title}>Hypochoco</div>
+        <div className={styles.logo_title}>{siteConfig.siteName}</div>
       </div>
 
       <div className={styles.link_container}>
@@ -18,7 +19,7 @@ export default function NavBar()
         <a className={styles.link} href="#architecture">Architecture</a>
         <a className={styles.link} href="#art">Art</a>
         <a className={styles.link} href="#contact">Contact</a>
-        <a className={styles.link} href="about-me">About Me</a>
+        <a className={styles.link} href="/about-me">About Me</a>
       </div>
 
     </div>
